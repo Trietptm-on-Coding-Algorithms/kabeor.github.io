@@ -3,6 +3,15 @@
   
     
     <entry>
+      <title>Top</title>
+      <link href="/Top/"/>
+      <url>/Top/</url>
+      <content type="html"><![CDATA[<h1 id="Top"><a href="#Top" class="headerlink" title="Top"></a>Top</h1><p>一直想要写这个了，每天记录，每周上传吧，把每天有意思的事物写下来</p><h2 id="Issue"><a href="#Issue" class="headerlink" title="Issue"></a>Issue</h2><p>先解答一些包括我也很崩溃的问题</p><ol><li>博客为什么加载这么慢<blockquote><p>首先我的博客是多图流，图片都是高清或是4K的，我尽量把图片都压缩到500k以下了，js也优化过，是真的尽力了啊。。<br>然后因为是17届大一，买不起cdn诶，求大佬赞助(偷偷放链接 <a href="http://t.cn/R3YA9gO" target="_blank" rel="noopener">http://t.cn/R3YA9gO</a>)<br>然后其他理由想起来再补充</p></blockquote></li><li>待补充，欢迎提问</li></ol><hr><h2 id="Begin"><a href="#Begin" class="headerlink" title="Begin"></a>Begin</h2><h3 id="2018-5-18"><a href="#2018-5-18" class="headerlink" title="2018.5.18"></a>2018.5.18</h3><p>今天就把前几天的也记上吧</p><h4 id="1-打造个性超赞博客Hexo-NexT-GithubPages的超深度优化"><a href="#1-打造个性超赞博客Hexo-NexT-GithubPages的超深度优化" class="headerlink" title="1.打造个性超赞博客Hexo+NexT+GithubPages的超深度优化"></a>1.打造个性超赞博客Hexo+NexT+GithubPages的超深度优化</h4><p>这篇文章加里面的链接可以说是优化博客非常全的一篇文章了</p><blockquote><p><a href="https://reuixiy.github.io/technology/computer/computer-aided-art/2017/06/09/hexo-next-optimization.html" target="_blank" rel="noopener">https://reuixiy.github.io/technology/computer/computer-aided-art/2017/06/09/hexo-next-optimization.html</a></p></blockquote><h4 id="2-一个假装是死循环的有限循环"><a href="#2-一个假装是死循环的有限循环" class="headerlink" title="2.一个假装是死循环的有限循环"></a>2.一个假装是死循环的有限循环</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">for(int i=1; i&lt;0; i++)</span><br><span class="line">&#123;</span><br><span class="line">    cout &lt;&lt; &quot;我不是死循环&quot; &lt;&lt; endl;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>原理: 明天写。。。</p><h4 id="3-IDA-技巧-处理动态导入"><a href="#3-IDA-技巧-处理动态导入" class="headerlink" title="3.IDA 技巧-处理动态导入"></a>3.IDA 技巧-处理动态导入</h4><blockquote><p><a href="https://www.usualsuspect.re/article/ida-tricks-handling-dynamic-imports" target="_blank" rel="noopener">https://www.usualsuspect.re/article/ida-tricks-handling-dynamic-imports</a></p></blockquote><h4 id="4-逆向-Path-of-Exile-游戏系列"><a href="#4-逆向-Path-of-Exile-游戏系列" class="headerlink" title="4.逆向 Path of Exile 游戏系列"></a>4.逆向 Path of Exile 游戏系列</h4><blockquote><p>Part 1： <a href="http://tbinarii.blogspot.in/2018/05/reverse-engineering-path-of-exile.html" target="_blank" rel="noopener">http://tbinarii.blogspot.in/2018/05/reverse-engineering-path-of-exile.html</a><br>Part 2： <a href="http://tbinarii.blogspot.in/2018/05/reverse-engineering-path-of-exile_0.html" target="_blank" rel="noopener">http://tbinarii.blogspot.in/2018/05/reverse-engineering-path-of-exile_0.html</a><br>Part 3：<a href="http://tbinarii.blogspot.in/2018/05/reverse-engineering-path-of-exile-game.html" target="_blank" rel="noopener">http://tbinarii.blogspot.in/2018/05/reverse-engineering-path-of-exile-game.html</a></p></blockquote><h4 id="5-Adobe-Acrobat-Reader-DC-远程代码执行漏洞详情披露-CVE-2018-4996、CVE-2018-4947"><a href="#5-Adobe-Acrobat-Reader-DC-远程代码执行漏洞详情披露-CVE-2018-4996、CVE-2018-4947" class="headerlink" title="5.Adobe Acrobat Reader DC 远程代码执行漏洞详情披露(CVE-2018-4996、CVE-2018-4947)"></a>5.Adobe Acrobat Reader DC 远程代码执行漏洞详情披露(CVE-2018-4996、CVE-2018-4947)</h4><blockquote><p><a href="https://blog.talosintelligence.com/2018/05/multiple-acrobat-reader-vulns.html" target="_blank" rel="noopener">https://blog.talosintelligence.com/2018/05/multiple-acrobat-reader-vulns.html</a></p></blockquote><p>From <a href="https://kabeor.github.io/Top/">https://kabeor.github.io/Top/</a> bye</p>]]></content>
+      
+      
+    </entry>
+    
+    <entry>
       <title>DDCTF2018 Reverse writeup(1) baby_mips</title>
       <link href="/DDCTF2018%20Reverse%20writeup(1)%20baby_mips/"/>
       <url>/DDCTF2018%20Reverse%20writeup(1)%20baby_mips/</url>
@@ -1495,16 +1504,16 @@
     </entry>
     
     <entry>
-      <title>All categories</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>gallery</title>
+      <link href="/gallery/index.html"/>
+      <url>/gallery/index.html</url>
       <content type="html"><![CDATA[]]></content>
     </entry>
     
     <entry>
-      <title>gallery</title>
-      <link href="/gallery/index.html"/>
-      <url>/gallery/index.html</url>
+      <title>All categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       <content type="html"><![CDATA[]]></content>
     </entry>
     
@@ -1516,16 +1525,16 @@
     </entry>
     
     <entry>
-      <title>tags</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title>timeline</title>
+      <link href="/timeline/index.html"/>
+      <url>/timeline/index.html</url>
       <content type="html"><![CDATA[]]></content>
     </entry>
     
     <entry>
-      <title>timeline</title>
-      <link href="/timeline/index.html"/>
-      <url>/timeline/index.html</url>
+      <title>tags</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       <content type="html"><![CDATA[]]></content>
     </entry>
     

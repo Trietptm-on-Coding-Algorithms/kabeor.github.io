@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kabeor.github.io/"/>
-  <updated>2018-05-16T15:08:45.257Z</updated>
+  <updated>2018-05-18T15:11:19.369Z</updated>
   <id>https://kabeor.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Top</title>
+    <link href="https://kabeor.github.io/Top/"/>
+    <id>https://kabeor.github.io/Top/</id>
+    <published>2018-05-18T14:24:59.000Z</published>
+    <updated>2018-05-18T15:11:19.369Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Top"><a href="#Top" class="headerlink" title="Top"></a>Top</h1><p>一直想要写这个了，每天记录，每周上传吧，把每天有意思的事物写下来</p><h2 id="Issue"><a href="#Issue" class="headerlink" title="Issue"></a>Issue</h2><p>先解答一些包括我也很崩溃的问题</p><ol><li>博客为什么加载这么慢<blockquote><p>首先我的博客是多图流，图片都是高清或是4K的，我尽量把图片都压缩到500k以下了，js也优化过，是真的尽力了啊。。<br>然后因为是17届大一，买不起cdn诶，求大佬赞助(偷偷放链接 <a href="http://t.cn/R3YA9gO" target="_blank" rel="noopener">http://t.cn/R3YA9gO</a>)<br>然后其他理由想起来再补充</p></blockquote></li><li>待补充，欢迎提问</li></ol><hr><h2 id="Begin"><a href="#Begin" class="headerlink" title="Begin"></a>Begin</h2><h3 id="2018-5-18"><a href="#2018-5-18" class="headerlink" title="2018.5.18"></a>2018.5.18</h3><p>今天就把前几天的也记上吧</p><h4 id="1-打造个性超赞博客Hexo-NexT-GithubPages的超深度优化"><a href="#1-打造个性超赞博客Hexo-NexT-GithubPages的超深度优化" class="headerlink" title="1.打造个性超赞博客Hexo+NexT+GithubPages的超深度优化"></a>1.打造个性超赞博客Hexo+NexT+GithubPages的超深度优化</h4><p>这篇文章加里面的链接可以说是优化博客非常全的一篇文章了</p><blockquote><p><a href="https://reuixiy.github.io/technology/computer/computer-aided-art/2017/06/09/hexo-next-optimization.html" target="_blank" rel="noopener">https://reuixiy.github.io/technology/computer/computer-aided-art/2017/06/09/hexo-next-optimization.html</a></p></blockquote><h4 id="2-一个假装是死循环的有限循环"><a href="#2-一个假装是死循环的有限循环" class="headerlink" title="2.一个假装是死循环的有限循环"></a>2.一个假装是死循环的有限循环</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">for(int i=1; i&lt;0; i++)</span><br><span class="line">&#123;</span><br><span class="line">    cout &lt;&lt; &quot;我不是死循环&quot; &lt;&lt; endl;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>原理: 明天写。。。</p><h4 id="3-IDA-技巧-处理动态导入"><a href="#3-IDA-技巧-处理动态导入" class="headerlink" title="3.IDA 技巧-处理动态导入"></a>3.IDA 技巧-处理动态导入</h4><blockquote><p><a href="https://www.usualsuspect.re/article/ida-tricks-handling-dynamic-imports" target="_blank" rel="noopener">https://www.usualsuspect.re/article/ida-tricks-handling-dynamic-imports</a></p></blockquote><h4 id="4-逆向-Path-of-Exile-游戏系列"><a href="#4-逆向-Path-of-Exile-游戏系列" class="headerlink" title="4.逆向 Path of Exile 游戏系列"></a>4.逆向 Path of Exile 游戏系列</h4><blockquote><p>Part 1： <a href="http://tbinarii.blogspot.in/2018/05/reverse-engineering-path-of-exile.html" target="_blank" rel="noopener">http://tbinarii.blogspot.in/2018/05/reverse-engineering-path-of-exile.html</a><br>Part 2： <a href="http://tbinarii.blogspot.in/2018/05/reverse-engineering-path-of-exile_0.html" target="_blank" rel="noopener">http://tbinarii.blogspot.in/2018/05/reverse-engineering-path-of-exile_0.html</a><br>Part 3：<a href="http://tbinarii.blogspot.in/2018/05/reverse-engineering-path-of-exile-game.html" target="_blank" rel="noopener">http://tbinarii.blogspot.in/2018/05/reverse-engineering-path-of-exile-game.html</a></p></blockquote><h4 id="5-Adobe-Acrobat-Reader-DC-远程代码执行漏洞详情披露-CVE-2018-4996、CVE-2018-4947"><a href="#5-Adobe-Acrobat-Reader-DC-远程代码执行漏洞详情披露-CVE-2018-4996、CVE-2018-4947" class="headerlink" title="5.Adobe Acrobat Reader DC 远程代码执行漏洞详情披露(CVE-2018-4996、CVE-2018-4947)"></a>5.Adobe Acrobat Reader DC 远程代码执行漏洞详情披露(CVE-2018-4996、CVE-2018-4947)</h4><blockquote><p><a href="https://blog.talosintelligence.com/2018/05/multiple-acrobat-reader-vulns.html" target="_blank" rel="noopener">https://blog.talosintelligence.com/2018/05/multiple-acrobat-reader-vulns.html</a></p></blockquote><p>From <a href="https://kabeor.github.io/Top/">https://kabeor.github.io/Top/</a> bye</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;Top&quot;&gt;&lt;a href=&quot;#Top&quot; class=&quot;headerlink&quot; title=&quot;Top&quot;&gt;&lt;/a&gt;Top&lt;/h1&gt;&lt;p&gt;一直想要写这个了，每天记录，每周上传吧，把每天有意思的事物写下来&lt;/p&gt;
+&lt;h2 id=&quot;Issue&quot;&gt;&lt;a href=&quot;#Issu
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>DDCTF2018 Reverse writeup(1) baby_mips</title>
@@ -547,31 +569,6 @@
       <category term="i春秋" scheme="https://kabeor.github.io/tags/i%E6%98%A5%E7%A7%8B/"/>
     
       <category term="Reserve，CTF" scheme="https://kabeor.github.io/tags/Reserve%EF%BC%8CCTF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2018.2 MOCTFcrackme2 WriteUp</title>
-    <link href="https://kabeor.github.io/2018.2%20MOCTFcrackme2%20WriteUp/"/>
-    <id>https://kabeor.github.io/2018.2 MOCTFcrackme2 WriteUp/</id>
-    <published>2018-02-12T11:19:41.231Z</published>
-    <updated>2018-02-12T11:24:21.055Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="2018-2-MOCTFcrackme2-WriteUp"><a href="#2018-2-MOCTFcrackme2-WriteUp" class="headerlink" title="2018.2 MOCTFcrackme2 WriteUp"></a>2018.2 MOCTFcrackme2 WriteUp</h1><h2 id="1-随意看看"><a href="#1-随意看看" class="headerlink" title="1. 随意看看"></a>1. 随意看看</h2><blockquote><p>拿到题以后打开<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180212/fmeK2JkKG4.png?imageslim" alt="mark"><br>随便输入以后回车，程序直接退出</p><p>查壳<br>VC++6.0写的，不放图了</p></blockquote><h2 id="OD分析"><a href="#OD分析" class="headerlink" title="OD分析"></a>OD分析</h2><h3 id="字符串搜索"><a href="#字符串搜索" class="headerlink" title="字符串搜索"></a>字符串搜索</h3><p><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180212/2Gl5kH4eIL.png?imageslim" alt="mark"></p><p>先到Your get the flag， but it ….看看<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180212/dg0a8BAJbm.png?imageslim" alt="mark"></p><h2 id="分析跳转"><a href="#分析跳转" class="headerlink" title="分析跳转"></a>分析跳转</h2><p>这个地方有个跳转，也就是判断你输的flag对不对的<br>但是这个跳转如果爆破是没什么用的，因为你并不能得出真正的flag<br>翻到上面<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180212/8j059Ikd13.png?imageslim" alt="mark"><br>可以看到有一行</p><pre><code>10&lt;1&lt;&gt;;?8:%w!##&amp;#q./,x(,((</code></pre><p>这其实是接下来要与你输入的字符做比较<br>在jnz判断前面的test下断点，从这段开头的push往下执行，执行到输入字符后，这时候返回来看看寄存器窗口，会发现<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180212/KbfhdH2cce.png?imageslim" alt="mark"><br>ECX里是要比较的字符串，EDX里是你刚刚输入的，而且被加密了，因此我们接下来要做的就是分析这个加密的原理</p><h2 id="IDA分析"><a href="#IDA分析" class="headerlink" title="IDA分析"></a>IDA分析</h2><h3 id="伪代码分析"><a href="#伪代码分析" class="headerlink" title="伪代码分析"></a>伪代码分析</h3><p>分析算法当然是IDA的F5大法了<br>找到刚刚那一段，F5<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180212/7bffJmEKjI.png?imageslim" alt="mark"><br>这就是整个算法了</p><p>可以看到，我们输入字符串之后，它把每一位都代入sub_4010CD,转换后得出新的组合<br>于是我们应该跟进去<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180212/AHg80l4igj.png?imageslim" alt="mark"><br>再跟<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180212/Jd5384li7H.png?imageslim" alt="mark"><br>好了，这就是它的加密算法核心了，先看看这个dword是什么<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180212/iKKDh14LjA.png?imageslim" alt="mark"><br>就是数字6</p><h3 id="算法分析"><a href="#算法分析" class="headerlink" title="算法分析"></a>算法分析</h3><p>所以这回就彻底清楚了<br><strong>我们把字符串输入进去，它把每一位都和这个dword做了异或，而dword从6开始累加，最后输出的v7与它原来的做比较</strong></p><p>所以依靠这个思路写一个c++程序,不要在意头文件。。。<br><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"stdafx.h"</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"><span class="keyword">int</span> i;</span><br><span class="line"><span class="keyword">char</span> s[] = <span class="string">"10&lt;1&lt;&gt;;?8:%w!##&amp;#q./,x(,(("</span>;</span><br><span class="line"><span class="keyword">char</span> v[<span class="number">100</span>] = &#123;<span class="number">6</span>,<span class="number">7</span>,<span class="number">8</span>,<span class="number">9</span>,<span class="number">10</span>,<span class="number">11</span>,<span class="number">12</span>,<span class="number">13</span>,<span class="number">14</span>,<span class="number">15</span>,<span class="number">16</span>,<span class="number">17</span>,<span class="number">18</span>,<span class="number">19</span>,<span class="number">20</span>,<span class="number">21</span>,<span class="number">22</span>,<span class="number">23</span>,<span class="number">24</span>,<span class="number">25</span>,<span class="number">26</span>,<span class="number">27</span>,<span class="number">28</span>,<span class="number">29</span>,<span class="number">30</span>,<span class="number">31</span>&#125;;</span><br><span class="line"><span class="keyword">for</span> (i = <span class="number">0</span>; i&lt;<span class="number">26</span>; i++)</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"%c"</span>, v[i] ^ s[i]);</span><br><span class="line"><span class="built_in">cin</span>.get();</span><br><span class="line"><span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p><p>这里直接带入</p><pre><code>10&lt;1&lt;&gt;;?8:%w!##&amp;#q./,x(,((</code></pre><p>就可以，因为两次异或抵消，所以加密前的带入得出加密后的，加密后<br>的带入也就能得到加密前的</p><p>所以得出结果<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180212/0i41aGfj89.png?imageslim" alt="mark"></p><pre><code>77486572655f30735f666c4167</code></pre><p>代进程序里试试<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180212/811FLAdk9B.png?imageslim" alt="mark"></p><p>不过怎么看也不像是flag，况且给提示了，所以应该是被其他加密方式加密了吧</p><h2 id="Flag"><a href="#Flag" class="headerlink" title="Flag"></a>Flag</h2><p>26位肯定不是MD5，长的像的只有16进制了，尝试后发现16进制转文本就是真正的flag<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180212/8e5718IHkE.png?imageslim" alt="mark"><br>就是下面这个了</p><pre><code>wHere_0s_flAg</code></pre><p>再带上格式<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180212/GFkG9be41m.png?imageslim" alt="mark"></p><p>轻松+200</p><p>From <a href="https://kabeor.github.io/2018.2 MOCTFcrackme2 WriteUp/">https://kabeor.github.io/2018.2 MOCTFcrackme2 WriteUp/</a> bye</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;2018-2-MOCTFcrackme2-WriteUp&quot;&gt;&lt;a href=&quot;#2018-2-MOCTFcrackme2-WriteUp&quot; class=&quot;headerlink&quot; title=&quot;2018.2 MOCTFcrackme2 WriteUp&quot;&gt;&lt;/a&gt;20
-      
-    
-    </summary>
-    
-    
-      <category term="CTF" scheme="https://kabeor.github.io/tags/CTF/"/>
-    
-      <category term="逆向" scheme="https://kabeor.github.io/tags/%E9%80%86%E5%90%91/"/>
     
   </entry>
   
