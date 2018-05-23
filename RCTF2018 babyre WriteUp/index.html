@@ -47,7 +47,7 @@
     
     <title>
         
-            标签: 逆向，160个crackme | 
+            RCTF2018 babyre WriteUp | 
         
         K&#39;s House
     </title>
@@ -85,6 +85,9 @@
         <style id="style_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("style_css","/css/style.min.css?MKetZV3cUTfDxvMffaOezg==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
 
         
+            
+                <style id="prettify_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_css","/css/prettify.min.css?zp8STOU9v89XWFEnN+6YmQ==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+                <style id="prettify_theme"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("prettify_theme","/css/prettify/tomorrow-night-eighties.min.css?2LJQzURO+Kr8r/fl/T8oMA==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
             
         
 
@@ -216,7 +219,7 @@
     <!-- WebAPP Icons -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="application-name" content="K&#39;s House">
-    <meta name="msapplication-starturl" content="https://kabeor.github.io/tags/逆向，160个crackme/">
+    <meta name="msapplication-starturl" content="https://kabeor.github.io/RCTF2018 babyre WriteUp/">
     <meta name="msapplication-navbutton-color" content="#0097A7">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="K&#39;s House">
@@ -231,13 +234,16 @@
     
 
     <!-- The Open Graph protocol -->
-    <meta property="og:url" content="https://kabeor.github.io/tags/逆向，160个crackme/">
+    <meta property="og:url" content="https://kabeor.github.io/RCTF2018 babyre WriteUp/">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="标签: 逆向，160个crackme | K&#39;s House">
+    <meta property="og:title" content="RCTF2018 babyre WriteUp | K&#39;s House">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="Trust me,Lisa.">
     
 
+    
+        <meta property="article:published_time" content="Wed May 23 2018 10:17:44 GMT+0800">
+        <meta property="article:modified_time" content="Wed May 23 2018 12:36:29 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -245,13 +251,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="https://kabeor.github.io/tags/逆向，160个crackme/index.html" />
+        <link rel="canonical" href="https://kabeor.github.io/RCTF2018 babyre WriteUp/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "https://kabeor.github.io/RCTF2018 babyre WriteUp/index.html",
+    "headline": "RCTF2018 babyre WriteUp",
+    "datePublished": "Wed May 23 2018 10:17:44 GMT+0800",
+    "dateModified": "Wed May 23 2018 12:36:29 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "kabeor",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "We1C0me_t0_K's_House"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "K&#39;s House",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": "",
+    "description": "Trust me,Lisa.",
+}
+</script>
 
 
     
@@ -302,151 +338,260 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
     
-        
-            
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#RCTF2018-babyre-WriteUp"><span class="post-toc-text">RCTF2018 babyre WriteUp</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#IDA分析"><span class="post-toc-text">IDA分析</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#算法分析"><span class="post-toc-text">算法分析</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#内部"><span class="post-toc-text">内部</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Flag"><span class="post-toc-text">Flag</span></a></li></ol></li></ol>
+    </ul>
+    
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+                <!-- Post Header(Thumbnail & Title) -->
                 
-                    <!-- Paradox Thumbnail -->
-                    <div class="post_entry-module mdl-card mdl-shadow--1dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+    <!-- Paradox Post Header -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/Top/"><span>[Top]</span>写在前面的话</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            写在前面的...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/Top/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="kabeor's avatar">
-            </div>
-            <div>
-                <strong>kabeor</strong>
-                <span>5月 18, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-                
-                
-            
-        
-    
-
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--1dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/001_Acid_burn.exe/">001_Acid_burn.exe</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/001_Acid_burn.exe/" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="kabeor's avatar">
-            </div>
-            <div>
-                <strong>kabeor</strong>
-                <span>3月 01, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-
-    
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random1/m-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', '/img/random1/m-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
 </script>
 
+        
+    
+            <p class="article-headline-p">
+                RCTF2018 babyre WriteUp
+            </p>
+        </div>
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>kabeor</strong>
+        <span>5月 23, 2018</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+
+    <!-- Share -->
+    
+        <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+        
+            <!-- Busuanzi Views -->
+            <a class="post_share-link" href="#">
+                <li class="mdl-menu__item">
+                    <span id="busuanzi_container_page_pv">
+                        <span id="busuanzi_value_page_pv"></span>&nbsp;浏览量
+                    </span>
+                </li>
+            </a>
+        
+    
+
+    <!-- Share Weibo -->
+    
+
+    <!-- Share Twitter -->
+    
+
+    <!-- Share Facebook -->
+    
+
+    <!-- Share Google+ -->
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
     
 </div>
+                
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h1 id="RCTF2018-babyre-WriteUp"><a href="#RCTF2018-babyre-WriteUp" class="headerlink" title="RCTF2018 babyre WriteUp"></a>RCTF2018 babyre WriteUp</h1><p>题目给了一个压缩包，里面有两个文件<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180523/B22Ai4Ebg0.png?imageslim" alt="mark"></p>
+<p>out文件<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180523/f8khGAh1lK.png?imageslim" alt="mark"></p>
+<p>这种题型应该就是<strong>得到算法后枚举，与正确输出的out作比较</strong></p>
+<p>那么首先拿IDA看一下吧</p>
+<h2 id="IDA分析"><a href="#IDA分析" class="headerlink" title="IDA分析"></a>IDA分析</h2><p>先搜索一下字符串吧<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180523/djIcIh9a87.png?imageslim" alt="mark"><br>可以看到这些有用的提示，使用交叉引用到汇编指令</p>
+<p>用图形化看一下(最后一张有一点歪了，请原谅)</p>
+<blockquote>
+<p>main函数 0x08048B49<br>比较长，挑重点</p>
+</blockquote>
+<p><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180523/l0m9Di186a.png?imageslim" alt="mark"><br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180523/K3il4DDed0.png?imageslim" alt="mark"></p>
+<blockquote>
+<p>返回输出流程 0x804882B</p>
+</blockquote>
+<p> <img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180523/DkHgmBa86m.png?imageslim" alt="mark"><br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180523/cFJ8D8Gg1L.png?imageslim" alt="mark"><br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180523/56kcEm2hD3.png?imageslim" alt="mark"></p>
+<p>注意到那个红色的报错了吗，是的，我们现在无法F5<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180523/daLHAL88i7.png?imageslim" alt="mark"></p>
+<p>显示<strong>sp分析失败</strong><br>经过搜索学习，明白了这种问题一般都是堆栈不平衡导致的，因此我们需要手动调整栈指针</p>
+<p>首先 菜单栏OPtions-&gt;General<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180523/FEIlIkF8di.png?imageslim" alt="mark"></p>
+<p>打上勾<br>然后回到汇编窗口，找到loc_80848CBB</p>
+<p><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180523/BBbe9c97ja.png?imageslim" alt="mark"></p>
+<p>观察发现，lea和retn处的栈指针都是00，导致问题的出现，因此我们应该运用堆栈平衡原理，将其平衡</p>
+<p>具体来说，想要修改一个位置的指针，需要将鼠标指向这个指针的上一个指针，然后 Alt+K</p>
+<p><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180523/B7L5DHjFj9.png?imageslim" alt="mark"></p>
+<p>将里面的0x9C修改为0x0，确认<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180523/16kH3gi6fa.png?imageslim" alt="mark"></p>
+<p>现在堆栈平衡，就可以F5了</p>
+<p>当然了，还可以选择GDB动态调试，在出错这里下断点，然后步入看汇编，但因为对汇编看的还不是很熟悉，GDB也不常接触，于是只能F5了(流下没技术的泪水)</p>
+<h2 id="算法分析"><a href="#算法分析" class="headerlink" title="算法分析"></a>算法分析</h2><p>F5看一下<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180523/252L5cgJ8k.png?imageslim" alt="mark"></p>
+<p><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180523/6b0J1K4FB8.png?imageslim" alt="mark"></p>
+<p>主函数判断输入格式，v4处可以看到，是将其<strong>八位即四字节一组(int大小为2字节，8/2=4)</strong>进行分组</p>
+<p>然后sub_804882B内是回显<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180523/7Lj0EhB99A.png?imageslim" alt="mark"></p>
+<p>sub_8048A41和sub_8048980不太清楚是干嘛的，应该是初始化和转换之类的</p>
+<p><strong>算法位于sub_80488E0内</strong></p>
+<p>先记住<strong>sub_80488E0(&amp;v6, 0xA72BE4C1, 0x1D082C23, seed, v4, v3);</strong>，后面有用</p>
+<h3 id="内部"><a href="#内部" class="headerlink" title="内部"></a>内部</h3><p><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180523/8H7i6cJmJ7.png?imageslim" alt="mark"></p>
+<p>看到一个30次的循环，嵌套sub_804868B<br>进去看看</p>
+<p><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180523/b90D76k3jm.png?imageslim" alt="mark"></p>
+<p>现在整个算法的全貌就展示在了我们面前</p>
+<p>逐位循环0x20F次换算成四字节一组也就是0x20F/4=0x7F<br>于是我们只需要从0x20到0x7F进行枚举，按照相应算法对out进行比较即可,注意80488E0一开始传入的两个字符串需要互换然后合并</p>
+<p>解题脚本如下<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line">#include &lt;string.h&gt;</span><br><span class="line">#include &lt;stdint.h&gt;</span><br><span class="line">uint32_t foo(uint32_t a1, uint64_t a2) // sub_804868B</span><br><span class="line">&#123;</span><br><span class="line">    int j;</span><br><span class="line">    uint64_t v5;</span><br><span class="line">    uint32_t in;</span><br><span class="line">    in = a1;</span><br><span class="line">    for (j = 0; j &lt;= 527; ++j)</span><br><span class="line">    &#123;</span><br><span class="line">        v5 = a2 &gt;&gt; (j &amp; 0x1F);</span><br><span class="line">        if (j &amp; 0x20)</span><br><span class="line">            v5 = v5 &gt;&gt; 32;           //高低位转换 </span><br><span class="line">        in = (in &gt;&gt; 1) ^ ((v5 ^ in ^ (in &gt;&gt; 16) ^ (0x5C743A2E &gt;&gt; (((in &gt;&gt; 1) &amp; 1)</span><br><span class="line">            + 2</span><br><span class="line">            * (2</span><br><span class="line">                * (((in &gt;&gt; 20) &amp; 1)</span><br><span class="line">                    + 2* (2 * (in &gt;&gt; 31) + ((in &gt;&gt; 26) &amp; 1)))</span><br><span class="line">                + ((in &gt;&gt; 9) &amp; 1))))) &lt;&lt; 31);</span><br><span class="line">    &#125;</span><br><span class="line">    return in;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    uint32_t data[30] = // out</span><br><span class="line">    &#123;</span><br><span class="line">        0xB80C91FE,0x70573EFE,</span><br><span class="line">        0xBEED92AE,0x7F7A8193,</span><br><span class="line">        0x7390C17B,0x90347C6C,</span><br><span class="line">        0xAA7A15DF,0xAA7A15DF,</span><br><span class="line">        0x526BA076,0x153F1A32,</span><br><span class="line">        0x545C15AD,0x7D8AA463,</span><br><span class="line">        0x526BA076,0xFBCB7AA0,</span><br><span class="line">        0x7D8AA463,0x9C513266,</span><br><span class="line">        0x526BA076,0x6D7DF3E1,</span><br><span class="line">        0xAA7A15DF,0x9C513266,</span><br><span class="line">        0x1EDC3864,0x9323BC07,</span><br><span class="line">        0x7D8AA463,0xFBCB7AA0,</span><br><span class="line">        0x153F1A32,0x526BA076,</span><br><span class="line">        0xF5650025,0xAA7A15DF,</span><br><span class="line">        0x1EDC3864,0xB13AD888</span><br><span class="line">    &#125;;</span><br><span class="line">    int i;</span><br><span class="line">    uint32_t j;</span><br><span class="line">    for (i = 0; i &lt; 30; i++)</span><br><span class="line">        for (j = 0x20; j &lt; 0x7F; j++)                    //0x20F/4=0x7F </span><br><span class="line">            if (foo(j, 0x1D082C23A72BE4C1) == data[i])   //互换，合并 </span><br><span class="line">                printf(&quot;%c&quot;, j);</span><br><span class="line">    printf(&quot;\n&quot;);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="Flag"><a href="#Flag" class="headerlink" title="Flag"></a>Flag</h2><p><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180523/jHmlDahLfJ.png?imageslim" alt="mark"></p>
+<p>解出： RCTF{Kee1o9_1s_a1ready_so1ved}</p>
+<p>From <a href="https://kabeor.github.io/RCTF2018 babyre WriteUp/">https://kabeor.github.io/RCTF2018 babyre WriteUp/</a> bye</p>
+
+        
+                <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none;">
+                    <p><strong>
+                         
+                            This blog is under a <a href="/creativecommons.html" target="_blank">CC BY-NC-SA 4.0 Unported License</a>
+                        </strong>
+                        <br>
+                        <strong>本文链接：</strong><a href="https://kabeor.github.io/RCTF2018 babyre WriteUp/">https://kabeor.github.io/RCTF2018 babyre WriteUp/</a>
+                    </p>
+                </blockquote>
+        
+    
+
+    
+</div>
+
+                
+                <!-- Post Comments -->
+                
+                    
+    <!-- 使用 来必力 -->
+<div id="livere-comment">
+    <div id="lv-container" data-id="city" data-uid="MTAyMC8zMzk5Ni8xMDUzMQ==">
+	<script type="text/ls-javascript" id="livere-comment-js">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+       if (typeof LivereTower === 'function') { return; }
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+	</script>
+</div>
+</div>
+<style>
+    #livere-comment{
+        background-color: #eee;
+        padding: 2pc;
+    }
+</style>
+
+                
+            </div>
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/Top/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
 
 
                     
@@ -694,6 +839,14 @@ It will not impact the appearance and can give developers a lot of support :)
                     
 
                     
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
+
+                    
 
                     <!--Footer-->
 <footer class="mdl-mini-footer" id="bottom">
@@ -846,6 +999,10 @@ It will not impact the appearance and can give developers a lot of support :)
 <!-- Import prettify js  -->
 
     
+        
+            <script>lsloader.load("prettify_js","/js/prettify.min.js?WN07fivHQSMKWy7BmHBB6w==", true)</script>
+        
+    
 
 
 
@@ -858,6 +1015,11 @@ It will not impact the appearance and can give developers a lot of support :)
     });
 
     
+        
+            $(function() {
+                $('pre').addClass('prettyprint linenums').attr('style', 'overflow:auto;');
+                prettyPrint();
+                })
         
     
     
