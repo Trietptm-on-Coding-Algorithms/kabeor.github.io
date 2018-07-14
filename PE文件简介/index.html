@@ -213,7 +213,7 @@
 
     <!-- Import jQuery -->
     
-        <script>lsloader.load("jq_js","https://cdn.bootcss.com/jquery/2.2.0/jquery.min.js", true)</script>
+        <script>lsloader.load("jq_js","/js/jquery.min.js?ezyEvm8ST5CGfpA+kFFi1g==", true)</script>
     
 
     <!-- WebAPP Icons -->
@@ -243,7 +243,7 @@
 
     
         <meta property="article:published_time" content="Thu Feb 01 2018 20:09:21 GMT+0800">
-        <meta property="article:modified_time" content="Sun Feb 04 2018 09:45:37 GMT+0800">
+        <meta property="article:modified_time" content="Sat Jul 14 2018 18:41:38 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -266,7 +266,7 @@
     "mainEntityOfPage": "https://kabeor.github.io/PE文件简介/index.html",
     "headline": "PE文件简介",
     "datePublished": "Thu Feb 01 2018 20:09:21 GMT+0800",
-    "dateModified": "Sun Feb 04 2018 09:45:37 GMT+0800",
+    "dateModified": "Sat Jul 14 2018 18:41:38 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "kabeor",
@@ -495,7 +495,7 @@
     
         <h1 id="PE文件"><a href="#PE文件" class="headerlink" title="PE文件"></a>PE文件</h1><p>PE文件的全称是Portable Executable，意为可移植的可执行的文件，常见的EXE、DLL、OCX、SYS、COM都是PE文件，PE文件是微软Windows操作系统上的程序文件（可能是间接被执行，如DLL）</p>
 <p>PE文件是指32位可执行文件，也称为PE32。64位的可执行文件称为PE+或PE32+,是PE(PE32)的一种扩展形式（请注意不是PE64)。</p>
-<h2 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h2><p><img src="http://img.blog.csdn.net/20130914221950000?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZXZpbGVhZ2xl/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast" alt="image"></p>
+<h2 id="结构"><a href="#结构" class="headerlink" title="结构"></a>结构</h2><p>(用个网上的图)<br><img src="https://i.loli.net/2018/07/14/5b49c771e2fd3.jpg" alt="image"></p>
 <p> 1.DOS头是用来兼容MS-DOS操作系统的，目的是当这个文件在MS-DOS上运行时提示一段文字，大部分情况下是：This program cannot be run in DOS mode. 还有一个目的，就是指明NT头在文件中的位置。</p>
 <p>2.NT头包含windows PE文件的主要信息，其中包括一个‘PE’字样的签名，PE文件头（IMAGE_FILE_HEADER）和PE可选头（IMAGE_OPTIONAL_HEADER32）。</p>
 <p>3.节表：是PE文件后续节的描述，windows根据节表的描述加载每个节。</p>
@@ -510,7 +510,7 @@
 <li><p>PE文件映射入内存后，PE装载器将继续处理PE文件中类似 import table （输入表）的逻辑部分</p>
 </li>
 </ol>
-<p><img src="http://image.3001.net/images/20151123/1448245853920.png!small" alt="image"></p>
+<p><img src="https://i.loli.net/2018/07/14/5b49c77220670.jpg" alt="image"></p>
 <p>当一个PE文件被加载到内存中以后，我们称之为“映象”（image），一般来说，PE文件在硬盘上和在内存里是不完全一样的，被加载到内存以后其占用的虚拟地址空间要比在硬盘上占用的空间大一些，这是因为各个节在硬盘上是连续的，而在内存中是按页对齐的，所以加载到内存以后节之间会出现一些“空洞”。</p>
 <p>因为存在这种对齐，所以在PE结构内部，表示某个位置的地址采用了两种方式，针对在硬盘上存储文件中的地址，称为原始存储地址或物理地址表示距离文件头的偏移；另外一种是针对加载到内存以后映象中的地址，称为相对虚拟地址（RVA），表示相对内存映象头的偏移。</p>
 <p>CPU的某些指令是需要使用绝对地址的，比如取全局变量的地址，传递函数的地址编译以后的汇编指令中肯定需要用到绝对地址而不是相对映象头的偏移，因此PE文件会建议操作系统将其加载到某个内存地址（这个叫基地址），编译器便根据这个地址求出代码中一些全局变量和函数的地址，并将这些地址用到对应的指令中。这种表示方式叫做虚拟地址（VA）。</p>
@@ -564,7 +564,7 @@
 <p>Subsystem：运行该PE文件所需的子系统。</p>
 <p>DllCharacteristics：DLL的文件属性，只对DLL文件有效</p>
 <h4 id="节段（区）头"><a href="#节段（区）头" class="headerlink" title="节段（区）头"></a>节段（区）头</h4><p>PE文件有不同的节段：code（代码），data（数据），resource（资源），这样设计避免了很多安全问题，比如向data写数据，由于某原因导致溢出，其下的code就会被覆盖，程序就会崩溃。</p>
-<p>code/data/resource都有不同的权限，如下：<img src="http://image.3001.net/images/20151123/1448246511395.png!small" alt="image"></p>
+<p>code/data/resource都有不同的权限，如下：<img src="https://i.loli.net/2018/07/14/5b49c77233db3.jpg" alt="image"></p>
 <p>节段头是由IMAGE_SECTION_HEADER结构体组成的数组，每个结构体对应一个节段。</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">typedef struct _IMAGE_SECTION_HEADER &#123;</span><br><span class="line">  BYTE  Name[IMAGE_SIZEOF_SHORT_NAME];</span><br><span class="line">  union &#123;</span><br><span class="line">    DWORD PhysicalAddress;</span><br><span class="line">    DWORD VirtualSize;</span><br><span class="line">  &#125; Misc;</span><br><span class="line">  DWORD VirtualAddress;</span><br><span class="line">  DWORD SizeOfRawData;</span><br><span class="line">  DWORD PointerToRawData;</span><br><span class="line">  DWORD PointerToRelocations;</span><br><span class="line">  DWORD PointerToLinenumbers;</span><br><span class="line">  WORD  NumberOfRelocations;</span><br><span class="line">  WORD  NumberOfLinenumbers;</span><br><span class="line">  DWORD Characteristics;</span><br><span class="line">&#125; IMAGE_SECTION_HEADER, *PIMAGE_SECTION_HEADER;</span><br></pre></td></tr></table></figure>
 <p>VirtualAddress与PointerToRawData不带有任何值，分别由（定义在IMAGE_OPTIONAL_HEADER32中的）SectionAlignment和FileAlignment确定。</p>
@@ -994,7 +994,7 @@ It will not impact the appearance and can give developers a lot of support :)
 
 
 
-    <script>lsloader.load("np_js","https://cdn.bootcss.com/nprogress/0.2.0/nprogress.js", true)</script>
+    <script>lsloader.load("np_js","/js/nprogress.js?pl3Qhb9lvqR1FlyLUna1Yw==", true)</script>
 
 
 <script type="text/ls-javascript" id="NProgress-script">
