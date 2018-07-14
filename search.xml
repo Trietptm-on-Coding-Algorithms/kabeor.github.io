@@ -1627,6 +1627,13 @@
   
     
     <entry>
+      <title>All categories</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
+      <content type="html"><![CDATA[]]></content>
+    </entry>
+    
+    <entry>
       <title>一个Security blog，记录着最基础的知识，当然也有对生活的感悟和一些记录，喜欢的话不如赏一杯九二年的Java</title>
       <link href="/about/index.html"/>
       <url>/about/index.html</url>
@@ -1637,13 +1644,6 @@
       <title>gallery</title>
       <link href="/gallery/index.html"/>
       <url>/gallery/index.html</url>
-      <content type="html"><![CDATA[]]></content>
-    </entry>
-    
-    <entry>
-      <title>All categories</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
       <content type="html"><![CDATA[]]></content>
     </entry>
     
