@@ -243,7 +243,7 @@
 
     
         <meta property="article:published_time" content="Thu Feb 01 2018 19:56:02 GMT+0800">
-        <meta property="article:modified_time" content="Sun Feb 04 2018 09:45:37 GMT+0800">
+        <meta property="article:modified_time" content="Sat Jul 14 2018 21:04:32 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -266,7 +266,7 @@
     "mainEntityOfPage": "https://kabeor.github.io/吾爱破解培训第二课：实战去广告、弹窗及主页锁定/index.html",
     "headline": "吾爱破解培训第二课：实战去广告、弹窗及主页锁定",
     "datePublished": "Thu Feb 01 2018 19:56:02 GMT+0800",
-    "dateModified": "Sun Feb 04 2018 09:45:37 GMT+0800",
+    "dateModified": "Sat Jul 14 2018 21:04:32 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "kabeor",
@@ -725,33 +725,33 @@ HKEY_USERS
 <p>脱壳</p>
 </blockquote>
 <p>PEID查壳为UPX</p>
-<p>od打开<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180109/amFfb5lgea.png" alt="http://p29uh0fw7.bkt.clouddn.com/kabeo/180109/amFfb5lgea.png"></p>
+<p>od打开<br><img src="https://i.loli.net/2018/07/14/5b49f4352ea41.jpg" alt="1"></p>
 <p><strong>UPX的特殊方法</strong><br>ctrl+B搜索字符串，输入多个0，查找</p>
-<p><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180109/al0FHf6CdH.png" alt="image"><br>就可快速查找到大跳转位置，jmp下断点，F8即可到达OEP</p>
+<p><img src="https://i.loli.net/2018/07/14/5b49f44e0a2e9.jpg" alt="image"><br>就可快速查找到大跳转位置，jmp下断点，F8即可到达OEP</p>
 <p><strong>ESP定律法</strong></p>
-<p>F8单步运行一次<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180109/f1hl3f3l9B.png" alt="http://p29uh0fw7.bkt.clouddn.com/kabeo/180109/f1hl3f3l9B.png"></p>
+<p>F8单步运行一次<br><img src="https://i.loli.net/2018/07/14/5b49f44e2cce7.jpg" alt="http://p29uh0ff3l9B.png"></p>
 <p>可以看到只有ESP为红色，记下此时ESP寄存器中的值0045f804</p>
-<p>在下面命令行输入dd 0045f804（或hr esp），回车<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180109/4m14lfiKfi.png" alt="image"><br>选中要下断点的0045f804那行，依次选择断点 -&gt; 硬件访问 -&gt; Word</p>
-<p>在菜单栏调试（D）下的硬件断点（H）下选项下可以看到我们设置的硬件断点<br><img src="http://my.csdn.net/uploads/201206/10/1339302256_9978.png" alt="image"></p>
-<p>按下F9运行程序，运行到程序停止<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180109/I74FcdAca8.png" alt="image"></p>
-<p>删除前面下的硬件断点，选择调试（D）下的硬件断点（H），弹出如下对话框，点击删除1按钮删除前面下的硬件断点<img src="http://my.csdn.net/uploads/201206/10/1339302287_9269.png" alt="image"></p>
-<p>下面的jmp跳转的数值非常大，基本判定将要到达OEP。在jmp处F2下断点，F9运行到这一步，F8单步运行一次<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180109/BLG27Ec9ie.png" alt="image"><br>这里就是程序真正的入口点，非常明显是VS2008/2010编译的</p>
+<p>在下面命令行输入dd 0045f804（或hr esp），回车<br><img src="https://i.loli.net/2018/07/14/5b49f44e517b0.jpg" alt="image"><br>选中要下断点的0045f804那行，依次选择断点 -&gt; 硬件访问 -&gt; Word</p>
+<p>在菜单栏调试（D）下的硬件断点（H）下选项下可以看到我们设置的硬件断点<br><img src="https://i.loli.net/2018/07/14/5b49f44e65b7f.jpg" alt="image"></p>
+<p>按下F9运行程序，运行到程序停止<br><img src="https://i.loli.net/2018/07/14/5b49f44e8ae18.jpg" alt="image"></p>
+<p>删除前面下的硬件断点，选择调试（D）下的硬件断点（H），弹出如下对话框，点击删除1按钮删除前面下的硬件断点<img src="https://i.loli.net/2018/07/14/5b49f44e9de3a.jpg" alt="image"></p>
+<p>下面的jmp跳转的数值非常大，基本判定将要到达OEP。在jmp处F2下断点，F9运行到这一步，F8单步运行一次<br><img src="https://i.loli.net/2018/07/14/5b49f44ec0a6f.jpg" alt="image"><br>这里就是程序真正的入口点，非常明显是VS2008/2010编译的</p>
 <p>复制call这行的地址，可用快捷键ctrl+x</p>
-<p>打开scylla，<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180109/DJcdh6AKDa.png" alt="image"></p>
+<p>打开scylla，<br><img src="https://i.loli.net/2018/07/14/5b49f44ee2a29.jpg" alt="image"></p>
 <p>选择要调试的进程，将刚刚复制的地址填进OEP框，点击  自动查找IAT – 获取输入表</p>
 <p>点击 转储文件–修复转储文件<br>得到名为dump和dump_SCY的文件</p>
-<p>SCY的就是已经脱壳的<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180109/m9ij01jG7L.png" alt="image"></p>
+<p>SCY的就是已经脱壳的<br><img src="https://i.loli.net/2018/07/14/5b49f44f00e1a.jpg" alt="image"></p>
 <p><strong>注意！！！</strong></p>
 <p>win7及以上系统具有ASLR保护功能</p>
 <p>ASLR（Address space layout randomization）是一种针对缓冲区溢出的安全保护技术，通过对堆、栈、共享库映射等线性区布局的随机化，通过增加攻击者预测目的地址的难度，防止攻击者直接定位攻击代码位置，达到阻止溢出攻击的目的。据研究表明ASLR可以有效的降低缓冲区溢出攻击的成功率，如今Linux、FreeBSD、Windows等主流操作系统都已采用了该技术。</p>
-<p>需要在dump并修复后使用ASLR disabler工具关闭ASLR功能，否则会出现<img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180113/0ikK7kAlea.png" alt="image"></p>
+<p>需要在dump并修复后使用ASLR disabler工具关闭ASLR功能，否则会出现<img src="https://i.loli.net/2018/07/14/5b49f44f1461d.jpg" alt="image"></p>
 <blockquote>
 <p>去除主页锁定</p>
 </blockquote>
-<p>搜索字符串，找到如下<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180113/CE3m3iae58.png" alt="image"></p>
+<p>搜索字符串，找到如下<br><img src="https://i.loli.net/2018/07/14/5b49f4735cd9f.jpg" alt="image"></p>
 <pre><code>SOFTWARE\microsoft\Internet Explorer\Main
 </code></pre><p>是对注册表的修改，这里也就是通过修改注册表来修改主页</p>
-<p>双击跟随<img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180113/kGa8FdAJJi.png" alt="image"><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180113/AG397d2980.png" alt="image"><br>这里因为脱壳不够完美，OD没有分析，需要PE地址修正</p>
+<p>双击跟随<img src="https://i.loli.net/2018/07/14/5b49f4787a660.jpg" alt="image"><br><img src="https://i.loli.net/2018/07/14/5b49f4cf9a4aa.jpg" alt="image"><br>这里因为脱壳不够完美，OD没有分析，需要PE地址修正</p>
 <p>找到段尾，有retn，为不让它修改主页，我们可以把段首也改为retn，也就是改为与段尾相同。（retn法）</p>
 <p>保存到可执行文件</p>
 <blockquote>
@@ -761,12 +761,12 @@ HKEY_USERS
 <p>或</p>
 <p>OD内找到API</p>
 <pre><code>CreateWindowExA/W
-</code></pre><p>F2断点<img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180113/J0f7e6K1Fk.png" alt="image"></p>
+</code></pre><p>F2断点<br><img src="https://i.loli.net/2018/07/14/5b49f4cfbf476.jpg" alt="image"></p>
 <p>把   <strong>每一处</strong>    宽和高都改为0即可</p>
 <blockquote>
 <p>右下角弹窗去除</p>
 </blockquote>
-<p>使用ProcExp或Procmon来查找窗口进程<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180113/d52lkDlKIL.png" alt="image"></p>
+<p>使用ProcExp或Procmon来查找窗口进程<br><img src="https://i.loli.net/2018/07/14/5b49f4cfe4002.jpg" alt="image"></p>
 <p>窗口创建也可用DialogBox</p>
 <p>ctrl+G搜索</p>
 <pre><code>DialogBoxParamA/W
@@ -776,18 +776,18 @@ HKEY_USERS
 <p>相关工具</p>
 </blockquote>
 <p>procmon和API monitor可检测程序所有行为</p>
-<h3 id="2"><a href="#2" class="headerlink" title="2"></a>2</h3><p><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180109/1j8l3cLiC9.png" alt="image"></p>
+<h3 id="2"><a href="#2" class="headerlink" title="2"></a>2</h3><p><img src="https://i.loli.net/2018/07/14/5b49f4d0190a6.jpg" alt="image"></p>
 <p>程序打开后有一个弹窗，软件下面有广告链接</p>
 <p>PEID查壳发现没加壳，VC++6.0编译</p>
-<p>用OD打开，搜索字符串http<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180109/4HDF1F2Lh7.png" alt="image"></p>
-<p>发现广告网址2345，搜索2345,发现<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180109/kj5KcDe5KC.png" alt="image"></p>
-<p>点击跟随<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180109/lBdaAIG6Fh.png" alt="image"></p>
+<p>用OD打开，搜索字符串http<br><img src="https://i.loli.net/2018/07/14/5b49f4a750429.jpg" alt="image"></p>
+<p>发现广告网址2345，搜索2345,发现<br><img src="https://i.loli.net/2018/07/14/5b49f4a775191.jpg" alt="image"></p>
+<p>点击跟随<br><img src="https://i.loli.net/2018/07/14/5b49f4a79a50a.jpg" alt="image"></p>
 <p>发现一个控制台和一个消息框API，把函数和参数（相应push和call）选中，nop填充复制到可执行文件。</p>
 <p>打开仍有广告，于是继续</p>
-<p>ctrl+G分别搜索下面的API，并下断点<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180109/6jL4laiccb.png" alt="image"></p>
+<p>ctrl+G分别搜索下面的API，并下断点<br><img src="https://i.loli.net/2018/07/14/5b49f397ce204.jpg" alt="image"></p>
 <p>F9运行将断下的API全部nop</p>
-<p>打开Restorator，载入文件，打开对话框<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180109/d6KK6b2hgA.png" alt="image"></p>
-<p>点上面的编辑，<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180109/Hh2mBiLIDj.png" alt="image"><br>选择相应按钮进行编辑即可。</p>
+<p>打开Restorator，载入文件，打开对话框<br><img src="https://i.loli.net/2018/07/14/5b49f397f28c9.jpg" alt="image"></p>
+<p>点上面的编辑，<br><img src="https://i.loli.net/2018/07/14/5b49f39822033.jpg" alt="image"><br>选择相应按钮进行编辑即可。</p>
 <p>至此软件去广告完毕。</p>
 <p>From <a href="https://kabeor.github.io/吾爱破解培训第二课：实战去广告、弹窗及主页锁定/">https://kabeor.github.io/吾爱破解培训第二课：实战去广告、弹窗及主页锁定/</a> bye</p>
 
@@ -1169,7 +1169,7 @@ It will not impact the appearance and can give developers a lot of support :)
     
 
     <span class="post-count">全站共</span> 
-    104.7k 
+    105.1k 
     <span>字</span>
 </div>
 

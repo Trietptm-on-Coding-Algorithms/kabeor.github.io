@@ -243,7 +243,7 @@
 
     
         <meta property="article:published_time" content="Thu Feb 01 2018 19:57:13 GMT+0800">
-        <meta property="article:modified_time" content="Sun Feb 04 2018 09:45:37 GMT+0800">
+        <meta property="article:modified_time" content="Sat Jul 14 2018 21:06:58 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -266,7 +266,7 @@
     "mainEntityOfPage": "https://kabeor.github.io/吾爱破解培训第三课：改头换面之修改版权和资源/index.html",
     "headline": "吾爱破解培训第三课：改头换面之修改版权和资源",
     "datePublished": "Thu Feb 01 2018 19:57:13 GMT+0800",
-    "dateModified": "Sun Feb 04 2018 09:45:37 GMT+0800",
+    "dateModified": "Sat Jul 14 2018 21:06:58 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "kabeor",
@@ -500,7 +500,7 @@
 <h3 id="给Exe程序添加弹窗"><a href="#给Exe程序添加弹窗" class="headerlink" title="给Exe程序添加弹窗"></a>给Exe程序添加弹窗</h3><p>1.添加MessageBoxA的导入表并获取VA<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">MessageBoxA</span><br><span class="line">MessageBoxA  ord:0 rva: 001AA187 VA:005AA187</span><br></pre></td></tr></table></figure></p>
 <p>2.添加一个新的区段，并植入汇编代码(弹窗并跳回原来的EP)<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">push Style(0)</span><br><span class="line">push Title</span><br><span class="line">push Text</span><br><span class="line">push hOwner(0)</span><br><span class="line">call dword ptr ds:[0x5AA187]</span><br></pre></td></tr></table></figure></p>
 <p>3.修改EP到新的起始位置并保存</p>
-<h3 id="汉化"><a href="#汉化" class="headerlink" title="汉化"></a>汉化</h3><p>使用Restorator，注意&amp;加字母表示快捷键</p>
+<h3 id="汉化"><a href="#汉化" class="headerlink" title="汉化"></a>汉化</h3><p>使用Restorator，注意&amp;加字母表示快捷键 </p>
 <p>From <a href="https://kabeor.github.io/吾爱破解培训第三课：改头换面之修改版权和资源/">https://kabeor.github.io/吾爱破解培训第三课：改头换面之修改版权和资源/</a> bye</p>
 
         
@@ -881,7 +881,7 @@ It will not impact the appearance and can give developers a lot of support :)
     
 
     <span class="post-count">全站共</span> 
-    104.7k 
+    105.1k 
     <span>字</span>
 </div>
 

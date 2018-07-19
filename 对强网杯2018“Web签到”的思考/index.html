@@ -243,7 +243,7 @@
 
     
         <meta property="article:published_time" content="Thu Mar 29 2018 19:50:54 GMT+0800">
-        <meta property="article:modified_time" content="Thu Jun 07 2018 19:23:28 GMT+0800">
+        <meta property="article:modified_time" content="Thu Jul 19 2018 13:24:18 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -266,7 +266,7 @@
     "mainEntityOfPage": "https://kabeor.github.io/对强网杯2018“Web签到”的思考/index.html",
     "headline": "对强网杯2018“Web签到”的思考",
     "datePublished": "Thu Mar 29 2018 19:50:54 GMT+0800",
-    "dateModified": "Thu Jun 07 2018 19:23:28 GMT+0800",
+    "dateModified": "Thu Jul 19 2018 13:24:18 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "kabeor",
@@ -385,7 +385,7 @@
     <!-- Paradox Post Header -->
     
         <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(http://p29uh0fw7.bkt.clouddn.com/kabeo/180607/aBgk0fc19F.png?imageslim)">
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(https://i.loli.net/2018/07/16/5b4c62f8f2471.png)">
     
             <p class="article-headline-p">
                 对强网杯2018“Web签到”的思考
@@ -489,7 +489,7 @@
 <ol>
 <li>PHP处理0e开头的md5哈希字符串的缺陷</li>
 <li>MD5函数不能处理数组</li>
-<li>字符串md5碰撞<h2 id="第一层"><a href="#第一层" class="headerlink" title="第一层"></a>第一层</h2><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180329/3mhi6iH3Bl.png?imageslim" alt="mark"><br>我们查看源码，可以找到<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180329/bfBe4BK4FE.png?imageslim" alt="mark"></li>
+<li>字符串md5碰撞<h2 id="第一层"><a href="#第一层" class="headerlink" title="第一层"></a>第一层</h2><img src="https://i.loli.net/2018/07/19/5b50207c83973.jpg" alt="mark"><br>我们查看源码，可以找到<br><img src="https://i.loli.net/2018/07/19/5b50207c9c081.jpg" alt="mark"></li>
 </ol>
 <figure class="highlight php"><table><tr><td class="code"><pre><span class="line">&lt;!--</span><br><span class="line">	<span class="keyword">if</span>($_POST[<span class="string">'param1'</span>]!=$_POST[<span class="string">'param2'</span>] &amp;&amp; md5($_POST[<span class="string">'param1'</span>])==md5($_POST[<span class="string">'param2'</span>]))&#123;</span><br><span class="line">			<span class="keyword">die</span>(<span class="string">"success!"</span>);</span><br><span class="line">		&#125;</span><br><span class="line">--&gt;</span><br></pre></td></tr></table></figure>
 <p>这里PHP在处理哈希字符串时，利用”==”来对哈希值进行比较，把每一个以”0E”开头的哈希值都解释为0，因此如果两个不同的密码经过哈希以后，其哈希值都是以”0e”开头的，那么PHP将会认为它们都是0。</p>
@@ -501,7 +501,7 @@
 <blockquote>
 <p>s878926199a     md5: 0e545993274517709034328855841020<br>s155964671a     md5: 0e342768416822451524974117254469</p>
 </blockquote>
-<h2 id="第二层"><a href="#第二层" class="headerlink" title="第二层"></a>第二层</h2><p><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180329/8fcddm24D0.png?imageslim" alt="mark"><br>查看源码<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180329/5kedl7BIel.png?imageslim" alt="mark"></p>
+<h2 id="第二层"><a href="#第二层" class="headerlink" title="第二层"></a>第二层</h2><p><img src="https://i.loli.net/2018/07/19/5b50207caf867.jpg" alt="mark"><br>查看源码<br><img src="https://i.loli.net/2018/07/19/5b50207cc168b.jpg" alt="mark"></p>
 <figure class="highlight php"><table><tr><td class="code"><pre><span class="line">&lt;!--</span><br><span class="line">	<span class="keyword">if</span>($_POST[<span class="string">'param1'</span>]!==$_POST[<span class="string">'param2'</span>] &amp;&amp; md5($_POST[<span class="string">'param1'</span>])===md5($_POST[<span class="string">'param2'</span>]))&#123;</span><br><span class="line">			<span class="keyword">die</span>(<span class="string">"success!"</span>);</span><br><span class="line">		&#125;</span><br><span class="line">--&gt;</span><br></pre></td></tr></table></figure>
 <p>这里变成了===操作符，严格等于，因此我们无法利用0e<br>因此我们需要符合的条件为构建两个参数 使得他们类型或者值不相同 但哈希值相同</p>
 <p>这里我们考虑到，PHP的md5函数用法如下</p>
@@ -514,8 +514,8 @@
 <p>因此，如果md5中的参数不是字符串（string），则会返回null<br>所以如果我们传入两个值不同的数组，就会出现</p>
 <pre><code>null===null
 </code></pre><p>符合条件</p>
-<p>使用Burpsuite抓包，传数组<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180329/BGA575Im5h.png?imageslim" alt="mark"></p>
-<h2 id="第三层"><a href="#第三层" class="headerlink" title="第三层"></a>第三层</h2><p><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180329/1a3KL15gfa.png?imageslim" alt="mark"><br>源码<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180329/jfg1H3487G.png?imageslim" alt="mark"></p>
+<p>使用Burpsuite抓包，传数组<br><img src="https://i.loli.net/2018/07/19/5b50207cd5201.jpg" alt="mark"></p>
+<h2 id="第三层"><a href="#第三层" class="headerlink" title="第三层"></a>第三层</h2><p><img src="https://i.loli.net/2018/07/19/5b50207ce709f.jpg" alt="mark"><br>源码<br><img src="https://i.loli.net/2018/07/19/5b50207d0abe5.jpg" alt="mark"></p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!--</span><br><span class="line">	if((string)$_POST[&apos;param1&apos;]!==(string)$_POST[&apos;param2&apos;] &amp;&amp; md5($_POST[&apos;param1&apos;])===md5($_POST[&apos;param2&apos;]))&#123;</span><br><span class="line">		die(&quot;success!);</span><br><span class="line">	&#125;</span><br><span class="line">--&gt;</span><br></pre></td></tr></table></figure>
 <p>这次PHP将两个参数强行转成string.</p>
 <p>没有漏洞，我们只能考虑md5碰撞</p>
@@ -527,7 +527,7 @@
 <p>对于给定的初始化向量s，找出两组M，M’和N，N’，使得f（f（s，M），M’）= f（f（s，N），N’）  ，重要的是这里不仅仅适用于标准初始化矢量s0，而对于任何初始化矢量s都适用。</p>
 <p>也就是说对于两个不同的消息分组 M、N，s 相同，经过两次 f 函数后得到的结果是一样的。</p>
 <p>因此可以找到任意长度的对文件，除了文件中间的128个字节，它们是相同的，而且它们具有相同的MD5散列。</p>
-<p><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180329/ba8gIeaH5i.png?imageslim" alt="mark"><br>为了便于理解，自己做了个图</p>
+<p><img src="https://i.loli.net/2018/07/19/5b50207d22366.jpg" alt="mark"><br>为了便于理解，自己做了个图</p>
 <p>m0 m1经过两次f函数所得的hash是相同的</p>
 <p>如果对这个有兴趣，推荐下面的网站</p>
 <p>md5相关知识： <a href="http://www.unixwiz.net/techtips/iguide-crypto-hashes.html" target="_blank" rel="noopener">http://www.unixwiz.net/techtips/iguide-crypto-hashes.html</a><br>可视化md5碰撞演示： <a href="http://www.links.org/?p=6" target="_blank" rel="noopener">http://www.links.org/?p=6</a><br>用相同的MD5散列创建两个PHP文件： <a href="https://natmchugh.blogspot.com/2014/10/how-i-made-two-php-files-with-same-md5.html" target="_blank" rel="noopener">https://natmchugh.blogspot.com/2014/10/how-i-made-two-php-files-with-same-md5.html</a><br>Are there two known strings which have the same MD5 hash value?： <a href="https://crypto.stackexchange.com/questions/1434/are-there-two-known-strings-which-have-the-same-md5-hash-value" target="_blank" rel="noopener">https://crypto.stackexchange.com/questions/1434/are-there-two-known-strings-which-have-the-same-md5-hash-value</a></p>
@@ -912,7 +912,7 @@ It will not impact the appearance and can give developers a lot of support :)
     
 
     <span class="post-count">全站共</span> 
-    104.7k 
+    105.1k 
     <span>字</span>
 </div>
 

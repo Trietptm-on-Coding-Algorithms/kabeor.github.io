@@ -58,7 +58,7 @@
 
     <meta name="format-detection" content="telephone=no"/>
     <meta name="description" itemprop="description" content="Trust me,Lisa.">
-    <meta name="keywords" content=",CTF,逆向,i春秋">
+    <meta name="keywords" content=",i春秋,CTF,逆向">
     <meta name="theme-color" content="#0097A7">
 
     <!-- Disable Fucking Bloody Baidu Tranformation -->
@@ -239,11 +239,11 @@
     <meta property="og:title" content="百度杯十一月赛题CrackMe01 | K&#39;s House">
     <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="Trust me,Lisa.">
-    <meta property="og:article:tag" content="CTF"> <meta property="og:article:tag" content="逆向"> <meta property="og:article:tag" content="i春秋"> 
+    <meta property="og:article:tag" content="i春秋"> <meta property="og:article:tag" content="CTF"> <meta property="og:article:tag" content="逆向"> 
 
     
         <meta property="article:published_time" content="Thu Feb 01 2018 20:15:26 GMT+0800">
-        <meta property="article:modified_time" content="Sun Mar 18 2018 19:42:00 GMT+0800">
+        <meta property="article:modified_time" content="Sun Jul 15 2018 23:30:45 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -266,7 +266,7 @@
     "mainEntityOfPage": "https://kabeor.github.io/百度杯十一月赛题CrackMe01/index.html",
     "headline": "百度杯十一月赛题CrackMe01",
     "datePublished": "Thu Feb 01 2018 20:15:26 GMT+0800",
-    "dateModified": "Sun Mar 18 2018 19:42:00 GMT+0800",
+    "dateModified": "Sun Jul 15 2018 23:30:45 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "kabeor",
@@ -284,7 +284,7 @@
             "url": "/img/favicon.png"
         }
     },
-    "keywords": ",CTF,逆向,i春秋",
+    "keywords": ",i春秋,CTF,逆向",
     "description": "Trust me,Lisa.",
 }
 </script>
@@ -496,26 +496,26 @@
         <h1 id="百度杯十一月赛题CrackMe01"><a href="#百度杯十一月赛题CrackMe01" class="headerlink" title="百度杯十一月赛题CrackMe01"></a>百度杯十一月赛题CrackMe01</h1><blockquote>
 <p>1</p>
 </blockquote>
-<p><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180124/bAE0mglfeC.png?imageslim" alt="mark"></p>
+<p><img src="https://i.loli.net/2018/07/15/5b4b686f276b8.jpg" alt="mark"></p>
 <p>用IDA打开，只有一个信息框，所以从弹窗下手</p>
-<p>搜索message  API<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180124/0k0I9A1l1E.png?imageslim" alt="mark"></p>
-<p>看到MessageBoxW<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180124/Ck92lCGBe7.png?imageslim" alt="mark"><br>双击进去，Ctrl+X查看调用，发现没有被调用，于是放过</p>
-<p>弹窗有可能为窗口类，搜索window<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180124/5aB8LA5mlD.png?imageslim" alt="mark"></p>
+<p>搜索message  API<br><img src="https://i.loli.net/2018/07/15/5b4b686f5976a.jpg" alt="mark"></p>
+<p>看到MessageBoxW<br><img src="https://i.loli.net/2018/07/15/5b4b686f7bef4.jpg" alt="mark"><br>双击进去，Ctrl+X查看调用，发现没有被调用，于是放过</p>
+<p>弹窗有可能为窗口类，搜索window<br><img src="https://i.loli.net/2018/07/15/5b4b686f91534.jpg" alt="mark"></p>
 <p>找到ShowWindow</p>
-<p><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180124/hecIKb3mlE.png?imageslim" alt="mark"><br>双击进入</p>
-<p><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180124/CI44KE2Aii.png?imageslim" alt="mark"><br>自定义消息的位置</p>
+<p><img src="https://i.loli.net/2018/07/15/5b4b686fa4fa6.jpg" alt="mark"><br>双击进入</p>
+<p><img src="https://i.loli.net/2018/07/15/5b4b686fbae37.jpg" alt="mark"><br>自定义消息的位置</p>
 <p>004028A5处      ebx累加</p>
-<p>查看发送消息的API<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180124/8lmeb8785C.png?imageslim" alt="mark"></p>
+<p>查看发送消息的API<br><img src="https://i.loli.net/2018/07/15/5b4b686fcf573.jpg" alt="mark"></p>
 <p>Post MessageW</p>
-<p>进入<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180124/ee5jAJ3eGJ.png?imageslim" alt="mark"></p>
-<p>F5查看伪码<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180124/D3Kj1ffl2j.png?imageslim" alt="mark"></p>
-<p><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180124/f5m5ldkA8b.png?imageslim" alt="mark"><br>把eax里的数组取出2c的长度，异或即可</p>
+<p>进入<br><img src="https://i.loli.net/2018/07/15/5b4b686fe2642.jpg" alt="mark"></p>
+<p>F5查看伪码<br><img src="https://i.loli.net/2018/07/15/5b4b6870041ab.jpg" alt="mark"></p>
+<p><img src="https://i.loli.net/2018/07/15/5b4b689d6bd56.jpg" alt="mark"><br>把eax里的数组取出2c的长度，异或即可</p>
 <blockquote>
 <p>2</p>
 </blockquote>
-<p>通过ShowWindow 定位到进行判断的函数<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180124/4g3EbhhjCC.png?imageslim" alt="mark"><br>可以发现这里的 DrawTextW 就是将chText打印到程序中央。<br>  <img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180124/LKEhbee59G.png?imageslim" alt="mark"><br>可以看到这里有一堆Unicode编码的 文本。然后在程序上往上翻<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180124/HAlF1gB5AF.png?imageslim" alt="mark"><br>这里对chText按位用同一个字符进行异或。 直接爆破。<br>  <img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180124/21B4bE03Hm.png?imageslim" alt="mark"><br> <img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180124/028K7kmChJ.png?imageslim" alt="mark"></p>
+<p>通过ShowWindow 定位到进行判断的函数<br><img src="https://i.loli.net/2018/07/15/5b4b689d91d47.jpg" alt="mark"><br>可以发现这里的 DrawTextW 就是将chText打印到程序中央。<br>  <img src="https://i.loli.net/2018/07/15/5b4b689db54bc.jpg" alt="mark"><br>可以看到这里有一堆Unicode编码的 文本。然后在程序上往上翻<br><img src="https://i.loli.net/2018/07/15/5b4b689ddb846.jpg" alt="mark"><br>这里对chText按位用同一个字符进行异或。 直接爆破。<br>  <img src="https://i.loli.net/2018/07/15/5b4b689e41076.jpg" alt="mark"><br> <img src="https://i.loli.net/2018/07/15/5b4b689e54214.jpg" alt="mark"></p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#include &quot;stdafx.h&quot;</span><br><span class="line">#include&lt;iostream&gt;</span><br><span class="line">#include&lt;string.h&gt;</span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	char flag[] = &#123; 0xF0,0xDA,0xD7,0xD1,0x8C,0xFF,0xF5,0xFE,0xE3,0xF8,0xE7,0xFF,0xE3,0xE9,0xF0,0xF3,0x85,0x80,0x84,0xF2,0xF4,0xF3,0 &#125;;</span><br><span class="line"></span><br><span class="line">	for (int x = 0; x &lt; 0xFF; x++)</span><br><span class="line">	&#123;</span><br><span class="line">		for (int i = 0; i &lt; strlen(flag); i++)</span><br><span class="line">		&#123;</span><br><span class="line">			printf(&quot;%c&quot;,flag[i] ^ x);</span><br><span class="line">		&#125;</span><br><span class="line">		printf(&quot; %X\n&quot;, x);</span><br><span class="line">	&#125;</span><br><span class="line">	cin.get();</span><br><span class="line"></span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180124/iECgJhlA9k.png?imageslim" alt="mark"></p>
+<p><img src="https://i.loli.net/2018/07/15/5b4b689e76b06.jpg" alt="mark"></p>
 <p>ICHUNQIU_FE362DBE</p>
 <p>From <a href="https://kabeor.github.io/百度杯十一月赛题CrackMe01/">https://kabeor.github.io/百度杯十一月赛题CrackMe01/</a> bye</p>
 
@@ -897,7 +897,7 @@ It will not impact the appearance and can give developers a lot of support :)
     
 
     <span class="post-count">全站共</span> 
-    104.7k 
+    105.1k 
     <span>字</span>
 </div>
 

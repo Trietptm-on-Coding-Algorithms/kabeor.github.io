@@ -243,7 +243,7 @@
 
     
         <meta property="article:published_time" content="Sun Mar 18 2018 19:40:08 GMT+0800">
-        <meta property="article:modified_time" content="Sun Mar 18 2018 22:38:32 GMT+0800">
+        <meta property="article:modified_time" content="Sun Jul 15 2018 23:33:02 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -266,7 +266,7 @@
     "mainEntityOfPage": "https://kabeor.github.io/Snert-2018春季淘汰赛Reverse WriteUp/index.html",
     "headline": "Snert-2018春季淘汰赛Reverse WriteUp",
     "datePublished": "Sun Mar 18 2018 19:40:08 GMT+0800",
-    "dateModified": "Sun Mar 18 2018 22:38:32 GMT+0800",
+    "dateModified": "Sun Jul 15 2018 23:33:02 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "kabeor",
@@ -496,14 +496,14 @@
         <h1 id="RE100"><a href="#RE100" class="headerlink" title="RE100"></a>RE100</h1><p>这题越看越熟悉，原来做过，i春秋的那篇wp就是我写的hhh</p>
 <p>链接   <a href="https://www.ichunqiu.com/writeup/detail/597" target="_blank" rel="noopener">第三届上海市大学生网络安全大赛crackme
 </a></p>
-<h1 id="RE500"><a href="#RE500" class="headerlink" title="RE500"></a>RE500</h1><h2 id="查壳"><a href="#查壳" class="headerlink" title="查壳"></a>查壳</h2><p>无壳<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180318/E4901AaAE8.png?imageslim" alt="mark"></p>
-<h2 id="IDA反编译"><a href="#IDA反编译" class="headerlink" title="IDA反编译"></a>IDA反编译</h2><p>运行发现，随意输入会弹出fail，此题应该是算法题，于是拖入IDA，shift+F12搜索字符串fail<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180318/6c3J2568km.png?imageslim" alt="mark"><br>只有一个，于是跟进去<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180318/CgJ1FH8iBh.png?imageslim" alt="mark"><br>发现这里就是主要算法部分了</p>
+<h1 id="RE500"><a href="#RE500" class="headerlink" title="RE500"></a>RE500</h1><h2 id="查壳"><a href="#查壳" class="headerlink" title="查壳"></a>查壳</h2><p>无壳<br><img src="https://i.loli.net/2018/07/15/5b4b691611d8e.jpg" alt="mark"></p>
+<h2 id="IDA反编译"><a href="#IDA反编译" class="headerlink" title="IDA反编译"></a>IDA反编译</h2><p>运行发现，随意输入会弹出fail，此题应该是算法题，于是拖入IDA，shift+F12搜索字符串fail<br><img src="https://i.loli.net/2018/07/15/5b4b691627470.jpg" alt="mark"><br>只有一个，于是跟进去<br><img src="https://i.loli.net/2018/07/15/5b4b69163b61b.jpg" alt="mark"><br>发现这里就是主要算法部分了</p>
 <h2 id="算法分析"><a href="#算法分析" class="headerlink" title="算法分析"></a>算法分析</h2><p>这个程序的伪代码竟然是标准的C++</p>
-<p>我们可以明显注意到名称空间Sudu<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180318/ikdI5ACald.png?imageslim" alt="mark"></p>
+<p>我们可以明显注意到名称空间Sudu<br><img src="https://i.loli.net/2018/07/15/5b4b69165345d.jpg" alt="mark"></p>
 <p>黄标可以看出有三个函数，分别是<br><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">Sudu::Sudu</span><br><span class="line">Sudu::set_data</span><br><span class="line">Sudu::check</span><br></pre></td></tr></table></figure></p>
 <p>根据他们的位置判断，这些就是主要函数了</p>
-<h3 id="Sudu-Sudu方法"><a href="#Sudu-Sudu方法" class="headerlink" title="Sudu::Sudu方法"></a>Sudu::Sudu方法</h3><p>进入后看到，这里是用来初始化的，把所有字符初始化为零<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180318/D6KD4FldkB.png?imageslim" alt="mark"></p>
-<h3 id="Sudu-set-data方法"><a href="#Sudu-set-data方法" class="headerlink" title="Sudu::set_data方法"></a>Sudu::set_data方法</h3><p><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180318/D5cI364BAE.png?imageslim" alt="mark"><br>这里明显是创建一个9x9的表，然后把this中的数字按顺序填进去<br>this就是外面的_data_start__<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180318/gbFl1Ikkf8.png?imageslim" alt="mark"><br>里面数字具体如下（太长了，只截取一部分）<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180318/EK3kDiBKJ7.png?imageslim" alt="mark"><br>按序填入后如下</p>
+<h3 id="Sudu-Sudu方法"><a href="#Sudu-Sudu方法" class="headerlink" title="Sudu::Sudu方法"></a>Sudu::Sudu方法</h3><p>进入后看到，这里是用来初始化的，把所有字符初始化为零<br><img src="https://i.loli.net/2018/07/15/5b4b6916687c7.jpg" alt="mark"></p>
+<h3 id="Sudu-set-data方法"><a href="#Sudu-set-data方法" class="headerlink" title="Sudu::set_data方法"></a>Sudu::set_data方法</h3><p><img src="https://i.loli.net/2018/07/15/5b4b69167cacc.jpg" alt="mark"><br>这里明显是创建一个9x9的表，然后把this中的数字按顺序填进去<br>this就是外面的_data_start__<br><img src="https://i.loli.net/2018/07/15/5b4b6916921c7.jpg" alt="mark"><br>里面数字具体如下（太长了，只截取一部分）<br><img src="https://i.loli.net/2018/07/15/5b4b6916a58e3.jpg" alt="mark"><br>按序填入后如下</p>
 <pre><code>0 0 7 5 0 0 0 6 0
 0 2 0 0 1 0 0 0 7
 9 0 0 0 3 0 4 0 0
@@ -513,15 +513,15 @@
 4 0 0 0 0 8 2 0 0
 0 0 5 9 0 0 0 8 0
 0 8 0 0 0 1 0 0 3
-</code></pre><h3 id="Sudu-check方法"><a href="#Sudu-check方法" class="headerlink" title="Sudu::check方法"></a>Sudu::check方法</h3><p>最后来看check这个方法，这个方法是判断决定输出是否成功的，返回1则success，内部如下<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180318/lLa20ilcbe.png?imageslim" alt="mark"><br>又是三个方法分别为<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Sudu::check_block    //块</span><br><span class="line">Sudu::check_col      //列</span><br><span class="line">Sudu::check_row      //行</span><br></pre></td></tr></table></figure></p>
+</code></pre><h3 id="Sudu-check方法"><a href="#Sudu-check方法" class="headerlink" title="Sudu::check方法"></a>Sudu::check方法</h3><p>最后来看check这个方法，这个方法是判断决定输出是否成功的，返回1则success，内部如下<br><img src="https://i.loli.net/2018/07/15/5b4b6916b9f5e.jpg" alt="mark"><br>又是三个方法分别为<br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Sudu::check_block    //块</span><br><span class="line">Sudu::check_col      //列</span><br><span class="line">Sudu::check_row      //行</span><br></pre></td></tr></table></figure></p>
 <p>根据单词意思就很好理解了，它们以&amp;&amp;连接，所以必须同时为1才行</p>
-<h4 id="check-block方法"><a href="#check-block方法" class="headerlink" title="check_block方法"></a>check_block方法</h4><p><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180318/8miCfll5Hj.png?imageslim" alt="mark"><br>先初始化v2，再对每个3x3的块做遍历，判断是否每个块里的数字各不相同</p>
-<h4 id="check-col方法"><a href="#check-col方法" class="headerlink" title="check_col方法"></a>check_col方法</h4><p><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180318/LI9Dj888Bi.png?imageslim" alt="mark"><br>检查每列数字是否相同</p>
-<h4 id="check-row方法"><a href="#check-row方法" class="headerlink" title="check_row方法"></a>check_row方法</h4><p><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180318/Kgbb38DE6I.png?imageslim" alt="mark"><br>同样的，检测每行数字是否相同</p>
-<h2 id="还有一个坑"><a href="#还有一个坑" class="headerlink" title="还有一个坑"></a>还有一个坑</h2><p>我们没有注意到，在if中有个set_sudu函数，进去看看<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180318/j1CB8KjdFL.png?imageslim" alt="mark"></p>
-<p>很长，但我们只需要看主要的if，这里有个Sudu::number方法，再进去<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180318/LgKi2jBg4K.png?imageslim" alt="mark"><br>这里<br>a1是我们要输入的字符串<br>this=v10/9<br>a3=v10%9<br>a4=v8-48<br>a5=v5</p>
+<h4 id="check-block方法"><a href="#check-block方法" class="headerlink" title="check_block方法"></a>check_block方法</h4><p><img src="https://i.loli.net/2018/07/15/5b4b6925eebf8.jpg" alt="mark"><br>先初始化v2，再对每个3x3的块做遍历，判断是否每个块里的数字各不相同</p>
+<h4 id="check-col方法"><a href="#check-col方法" class="headerlink" title="check_col方法"></a>check_col方法</h4><p><img src="https://i.loli.net/2018/07/15/5b4b69260f1a5.jpg" alt="mark"><br>检查每列数字是否相同</p>
+<h4 id="check-row方法"><a href="#check-row方法" class="headerlink" title="check_row方法"></a>check_row方法</h4><p><img src="https://i.loli.net/2018/07/15/5b4b69262153d.jpg" alt="mark"><br>同样的，检测每行数字是否相同</p>
+<h2 id="还有一个坑"><a href="#还有一个坑" class="headerlink" title="还有一个坑"></a>还有一个坑</h2><p>我们没有注意到，在if中有个set_sudu函数，进去看看<br><img src="https://i.loli.net/2018/07/15/5b4b692633b93.jpg" alt="mark"></p>
+<p>很长，但我们只需要看主要的if，这里有个Sudu::number方法，再进去<br><img src="https://i.loli.net/2018/07/15/5b4b69264722c.jpg" alt="mark"><br>这里<br>a1是我们要输入的字符串<br>this=v10/9<br>a3=v10%9<br>a4=v8-48<br>a5=v5</p>
 <p>判断表中的值是否为0，把原来给的值全设为0</p>
-<h2 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h2><p>数独太难，直接放网站解<br><a href="http://shudu.gwalker.cn/" target="_blank" rel="noopener">http://shudu.gwalker.cn/</a><br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180318/j3G5A5kkhB.png?imageslim" alt="mark"></p>
+<h2 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h2><p>数独太难，直接放网站解<br><a href="http://shudu.gwalker.cn/" target="_blank" rel="noopener">http://shudu.gwalker.cn/</a><br><img src="https://i.loli.net/2018/07/15/5b4b69265b70e.jpg" alt="mark"></p>
 <p>flag{340089102508406930016207058060875349709064820854392006093650071170023604602740590}</p>
 <p>From <a href="https://kabeor.github.io/Snert-2018春季淘汰赛Reverse WriteUp/">https://kabeor.github.io/Snert-2018春季淘汰赛Reverse WriteUp/</a> bye</p>
 
@@ -903,7 +903,7 @@ It will not impact the appearance and can give developers a lot of support :)
     
 
     <span class="post-count">全站共</span> 
-    104.7k 
+    105.1k 
     <span>字</span>
 </div>
 

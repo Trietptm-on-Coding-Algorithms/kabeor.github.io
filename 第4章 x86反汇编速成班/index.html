@@ -243,7 +243,7 @@
 
     
         <meta property="article:published_time" content="Fri Mar 23 2018 13:56:19 GMT+0800">
-        <meta property="article:modified_time" content="Thu Jun 07 2018 19:23:55 GMT+0800">
+        <meta property="article:modified_time" content="Thu Jul 19 2018 13:16:17 GMT+0800">
     
 
     <!-- The Twitter Card protocol -->
@@ -266,7 +266,7 @@
     "mainEntityOfPage": "https://kabeor.github.io/第4章 x86反汇编速成班/index.html",
     "headline": "第4章 x86反汇编速成班",
     "datePublished": "Fri Mar 23 2018 13:56:19 GMT+0800",
-    "dateModified": "Thu Jun 07 2018 19:23:55 GMT+0800",
+    "dateModified": "Thu Jul 19 2018 13:16:17 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "kabeor",
@@ -385,7 +385,7 @@
     <!-- Paradox Post Header -->
     
         <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(http://p29uh0fw7.bkt.clouddn.com/kabeo/180607/FliDAC2h4I.png?imageslim)">
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(https://i.loli.net/2018/07/16/5b4c62f901955.png)">
     
             <p class="article-headline-p">
                 第4章 x86反汇编速成班
@@ -485,7 +485,7 @@
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
         <h1 id="第4章-x86反汇编速成班"><a href="#第4章-x86反汇编速成班" class="headerlink" title="第4章 x86反汇编速成班"></a>第4章 x86反汇编速成班</h1><h2 id="4x1-抽象层次"><a href="#4x1-抽象层次" class="headerlink" title="4x1 抽象层次"></a>4x1 抽象层次</h2><blockquote>
-<p>恶意代码分析时的三种编码层次<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180323/kkHfCGCLcJ.png?imageslim" alt="mark"></p>
+<p>恶意代码分析时的三种编码层次<br><img src="https://i.loli.net/2018/07/19/5b501e70df5dd.jpg" alt="mark"></p>
 <p>计算机系统的六个抽象层次</p>
 </blockquote>
 <p><strong>硬件</strong>   硬件层是唯一的一个物理层，由电子电路组成。这些电路实现了XOR门、AND门、OR门和NOT门等逻辑运算器的复杂组合，称为数字逻辑（digital logic）。由于物理特性，硬件很难被软件所操纵。</p>
@@ -504,8 +504,8 @@
 <p>•    中央处理单元（ CPU ），负责执行代码<br>•    内存（RAM），负责存储所有的数据和代码。<br>•    输入／输出系统（IO），为硬盘、键盘、显示器等设备提供接口。</p>
 </blockquote>
 <p>指针（instruction pointer）的寄存器（register）从内存取得要执行的指令，这个寄存器中存有指令的地址。寄存器是CPU中数据的基本存储单元，通过它，很多时候CPU不再需要访问内存，从而节省了时间。算术逻辑单元（arithmetic logic unit, ALU）执行从内存取来的指令，并将结果放到寄存器或内存中。一条条取指令、执行指令的过程不断重复，就形成了程序的运行。</p>
-<p>冯诺依曼体系结构<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180323/4cCbB7KD6A.png?imageslim" alt="mark"></p>
-<h3 id="1-内存"><a href="#1-内存" class="headerlink" title="1.内存"></a>1.内存</h3><p>一个程序的内存可分为如下四个主要的节<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180323/al8j41eH4h.png?imageslim" alt="mark"></p>
+<p>冯诺依曼体系结构<br><img src="https://i.loli.net/2018/07/19/5b501e7100c59.jpg" alt="mark"></p>
+<h3 id="1-内存"><a href="#1-内存" class="headerlink" title="1.内存"></a>1.内存</h3><p>一个程序的内存可分为如下四个主要的节<br><img src="https://i.loli.net/2018/07/19/5b501e71145f6.jpg" alt="mark"></p>
 <blockquote>
 <p><strong>数据</strong> 这个词指的是内存中一 个特定的节，名为数据节 （data section），其中包含了一 些值。这些值在程序初始加载时被放到这里，称为静态值（static value），因为程序运行时它们可能并不发生变化，还可以称为全局值（global value），因为程序的任何部分都可以使用它们。</p>
 <p><strong>代码</strong> 代码节包含了在执行程序任务时CPU所取得的指令。这些代码决定了程序是做什么的，以及程序中的任务如何协调工作。</p>
@@ -524,7 +524,7 @@
 <blockquote>
 <p>通用寄存器，CPU在执行期间使用。<br>段寄存器，用于定位内存节。<br>状态标志，用于做出决定。<br>指令指针，用于定位要执行的下一条指令。</p>
 </blockquote>
-<p>x86寄存器<br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180323/JLIk7jAm7C.png?imageslim" alt="mark"></p>
+<p>x86寄存器<br><img src="https://i.loli.net/2018/07/19/5b501e712850c.jpg" alt="mark"></p>
 <p>所有通用寄存器的大小都是32位，可以在汇编代码中以32位或16位引用。</p>
 <p>有4个寄存器（EAX、EBX、ECX、EDX）还可以8位值的方式引用，从而使用其最低的8位，或次低的8位。</p>
 <p><strong>通用寄存器</strong>  通用寄存器一般用于存储数据或内存地址，而且经常交换着使用以完成程序。不过，虽然它们被称为通用寄存器，但它们并不完全通用。</p>
@@ -549,11 +549,11 @@
 <p>加法指令的格式是add destination, value。</p>
 <p>减法的指令是sub destination, value。<br>sub指令会修改两个重要的标志：ZF和CF。<br>如果结果为零，ZF被置位；如果目标操作数比要减去的值小，则CF被置位。</p>
 <p>inc和dec指令将一个寄存器加一和减一 。</p>
-<p><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180323/dJcCLJkFdg.png?imageslim" alt="mark"></p>
+<p><img src="https://i.loli.net/2018/07/19/5b501e713bdd5.jpg" alt="mark"></p>
 <p>乘法和除法都使用了一个预先规定的寄存器，因此其指令很简单，就是指令码加上寄存器要去乘或除的值。</p>
 <p>mul指令的格式是mul value;<br>div指令的格式是div value。</p>
 <p>mul或div指令要操作的寄存器一般会在之前许多条指令的地方被赋值，因此你可能需要在程序的上下文中来寻找。</p>
-<p><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180323/bfi8k7H4gA.png?imageslim" alt="mark"></p>
+<p><img src="https://i.loli.net/2018/07/19/5b501e7150bf6.jpg" alt="mark"></p>
 <p>mul value指令总是将eax乘上value。因此，EAX寄存器必须在乘法指令出现前就赋值好。乘法的结果以64位的形式分开存储在两个寄存器中：EDX和EAX。其中，EDX存储了高的32位，EAX存储低的32位。</p>
 <p>div value指令将EDX和EAX合起来存储的64位值除以value。因此，在做除法之前，EDX和EAX这两个寄存器必须赋值好。除法的商将存储到EAX，余数则存储在EDX中。</p>
 <p><strong>模（mod）</strong>运算会被编译为在div指令后取EDX寄存器的值（因为除法保留了余数）</p>
@@ -565,7 +565,7 @@
 <p>循环移位指令ror和rol与移位指令类似，但移出的那一位会被填到另一端空出来的位上，即右循环移位（ror）会将最低位循环移到最高位；左循环移位Crol)则相反。</p>
 <p>移位经常被用于对乘法运算的优化。由于不需要像乘法那样设置寄存器、移动数据，移位会更简单、更快。</p>
 <p>在分析恶意代码时，如果遇到一个函数中只有xor、or、and、shl、ror、shr、rol这样的指令，并且它们反复出现，看起来随机排列的样子，就可能是遇到了一个加密或者压缩函数。最好是将其标记为一个加密函数，然后继续后面的分析。</p>
-<p><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180323/GiE8HfLKi8.png?imageslim" alt="mark"></p>
+<p><img src="https://i.loli.net/2018/07/19/5b501e7165db8.jpg" alt="mark"></p>
 <h4 id="NOP指令"><a href="#NOP指令" class="headerlink" title="NOP指令"></a><strong>NOP指令</strong></h4><p>当它出现时，直接执行下一条指令。</p>
 <p>这条指令的opcode是Ox90。在缓冲区溢出攻击中，当攻击者无法完美地控制利用代码，就经常使用NOP滑板。它起到了填充代码的作用，以降低shellcode可能在中间部分开始执行所造成的风险。</p>
 <h3 id="7-栈"><a href="#7-栈" class="headerlink" title="7. 栈"></a>7. 栈</h3><p>用于函数的内存、局部变量、流控制结构等被存储在栈中。</p>
@@ -597,22 +597,22 @@
 <p>对某个东西与它自身的test经常被用于检查它是否是一个NULL值。</p>
 <p>cmp指令与sub指令的功能一样，但它不影响其操作数。cmp指令也是只用于设置标志位，其执行结果是，ZF和CF标志位可能发生变化。</p>
 <h3 id="9-分支指令"><a href="#9-分支指令" class="headerlink" title="9. 分支指令"></a>9. 分支指令</h3><p>最常见的分支指令是跳转指令。程序中使用了大量的跳转指令，其中最简单的是jmp指令，它使得下一条要被执行的指令是其格式jmp location中指定位置的指令，又被称为无条件跳转，因为总会跳到目的位置去执行。这个简单的跳转无法满足所有的跳转需求。</p>
-<p><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180323/FCgikAlbIf.png?imageslim" alt="mark"></p>
+<p><img src="https://i.loli.net/2018/07/19/5b501e7188b0c.jpg" alt="mark"></p>
 <h3 id="10-重复指令"><a href="#10-重复指令" class="headerlink" title="10. 重复指令"></a>10. 重复指令</h3><p>重复指令是一组操作数据缓冲区的指令。数据缓冲区通常是一个字节数组的形式，也可以是单字或者双字。</p>
 <p>常见的数据缓冲区操作指令是movsx, cmpsx、stosx和scasx，其中x可以是b、w或者d，分别表示字节、字和双字。这些指令对任何形式的数据都有效。</p>
 <p>在这些操作中，使用ESI和EDI寄存器。ESI是源索引寄存器，EDI是目的索引寄存器。还有ECX用作计数的变量。</p>
 <p>这些指令还需要一 个前缀，用于对长度超过1的数据做操作。movsb指令本身只会移动一 个字节，而不使用ECX 寄存器。</p>
-<p><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180323/lf5EFg057c.png?imageslim" alt="mark"></p>
+<p><img src="https://i.loli.net/2018/07/19/5b501e71a088e.jpg" alt="mark"></p>
 <p>在x86下，使用重复前缀来做多字节操作。rep指令会增加ESI和EDI这两个偏移，减少ECX寄存器。rep前缀会不断重复，直至ECX=O。repe／repz和repne/repnz前缀则不断重复，直至ECX=O或直至ZF= 1或0。</p>
 <p>movsb指令用于将一串字节从一个位置移动到另一 个位置。rep前缀经常与movsb一起使用，从而复制一串长度由ECX 决定的字节。从逻辑上说，rep movsb指令等价于C语言的memcpy函数。movsb指令从ESI指向地址取出一 个字节，将其存入ED I指向地址，然后根据方向标志（DF）的设置，将ESI和EDI的值加1或者减1。如果DF=O，则加，否则减。</p>
 <p>在由C代码编译后的结果中，很少能看到DF标志。但是在shellcode里，人们有时候会调换方向标志，这样就可以反方向存储数据。如果有rep前缀，就会检查ECX是否为0，如果不等于0，则指令继续从ESI移动一个字节到EDI并将ECX 寄存器减1。这个过程会不断重复，直至ECX=0。</p>
 <p>cmpsb指令用于比较两串字节，以确定其是否是相同的数据。cmpsb指令用ESI指向地址的字节减去EDI指向地址的字节，并更新相关的标志位。它经常与repe前缀一起使用。此时，cmpsb指令逐一比较两串字节，直至发现一处不同，或比较到头。cmpsb指令从地址ESI获得一 个字节，将其与ED I指向位置的字节进行比较，并设置标志位，然后对ESI和EDI分别加1。如果有「epe前缀，就检查ECX的值和标志位，如果ECX=O或者ZF=O，就停止重复。这相当于C语言中的memcmp函数。</p>
 <p>scasb指令用于从一串字节中搜索一 个值。这个值由AL寄存器给出。它的工作方式与cmpsb一样，但是它是将ESI指向地址的字节与AL进行比较，而不是与EDI指向地址的字节比较。repe操作会使得这个比较不断继续，直到找到该字节，或者ECX=O。如果在这串字节中找到了那个值，则其位置会被存储在ESI中。</p>
 <p>stosb指令用于将值存储到EDI指向的地址。它与scasb一样，但不是去搜索，而是将指定的字节存入EDI指向的地址。rep前缀与scasb一起使用后，就初始化了一段内存缓冲区，其中的每个字节都是相同的值。这等价于C语言的memset函数。</p>
-<p><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180323/lbdC8beK1C.png?imageslim" alt="mark"><br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180323/jDGe8LJai1.png?imageslim" alt="mark"></p>
+<p><img src="https://i.loli.net/2018/07/19/5b501e71b359d.jpg" alt="mark"><br><img src="https://i.loli.net/2018/07/19/5b501e7e0729d.jpg" alt="mark"></p>
 <h3 id="11-C语言主函数和偏移"><a href="#11-C语言主函数和偏移" class="headerlink" title="11. C语言主函数和偏移"></a>11. C语言主函数和偏移</h3><p>一个标准C程序的主函数有两个参数，形式如下：<br><code>int main(int argc, char** argv)</code><br>参数argc和argv在运行时决定。其中，参数argc是一个整数，说明了命令行中参数的个数，包括程序名字本身：参数argv是一个字符串数据指针，指向了所有的命令行参数。</p>
-<p><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180323/m4JJAl5je5.png?imageslim" alt="mark"><br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180323/IbmGBBKdE1.png?imageslim" alt="mark"></p>
-<h3 id="12-更多信息：Intel×86-Architecture-Manual"><a href="#12-更多信息：Intel×86-Architecture-Manual" class="headerlink" title="12. 更多信息：Intel×86 Architecture Manual"></a>12. 更多信息：Intel×86 Architecture Manual</h3><p><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180323/GKhf6el57H.png?imageslim" alt="mark"><br><img src="http://p29uh0fw7.bkt.clouddn.com/kabeo/180323/CAh3B8cIcc.png?imageslim" alt="mark"></p>
+<p><img src="https://i.loli.net/2018/07/19/5b501e7e24a3e.jpg" alt="mark"><br><img src="https://i.loli.net/2018/07/19/5b501e7e38f9b.jpg" alt="mark"></p>
+<h3 id="12-更多信息：Intel×86-Architecture-Manual"><a href="#12-更多信息：Intel×86-Architecture-Manual" class="headerlink" title="12. 更多信息：Intel×86 Architecture Manual"></a>12. 更多信息：Intel×86 Architecture Manual</h3><p><img src="https://i.loli.net/2018/07/19/5b501e7e50e23.jpg" alt="mark"><br><img src="https://i.loli.net/2018/07/19/5b501e7e66ddb.jpg" alt="mark"></p>
 <p>From <a href="https://kabeor.github.io/第4章 x86反汇编速成班/">https://kabeor.github.io/第4章 x86反汇编速成班/</a> bye</p>
 
         
@@ -993,7 +993,7 @@ It will not impact the appearance and can give developers a lot of support :)
     
 
     <span class="post-count">全站共</span> 
-    104.7k 
+    105.1k 
     <span>字</span>
 </div>
 
