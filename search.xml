@@ -3,6 +3,21 @@
   
     
     <entry>
+      <title>001_Acid_burn.exe 算法分析</title>
+      <link href="/001_Acid_burn.exe%20%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90/"/>
+      <url>/001_Acid_burn.exe%20%E7%AE%97%E6%B3%95%E5%88%86%E6%9E%90/</url>
+      <content type="html"><![CDATA[<h1 id="001-Acid-burn-exe-算法分析"><a href="#001-Acid-burn-exe-算法分析" class="headerlink" title="001_Acid_burn.exe 算法分析"></a>001_Acid_burn.exe 算法分析</h1><p>爆破的方法是好几个月以前写的了<br><a href="https://kabeor.cn/001_Acid_burn.exe/" target="_blank" rel="noopener">001_Acid_burn.exe</a></p><p>今天来看一下算法</p><h2 id="Serial"><a href="#Serial" class="headerlink" title="Serial"></a>Serial</h2><p>直接在OD中分析此分支，找到跳转判断条件<br><img src="https://i.loli.net/2018/08/03/5b63ce2dba2af.jpg" alt=""></p><p>函数004039FC内将输入字符串与“Hello Dude!”进行比较<br>即密码就是 Hello Dude!</p><h2 id="Name-Serial"><a href="#Name-Serial" class="headerlink" title="Name+Serial"></a>Name+Serial</h2><p><img src="https://i.loli.net/2018/08/03/5b63cfafaf959.jpg" alt=""></p><p>整个结构很清晰，name长度必须大于等于4，然后进入算法判断</p><p><img src="https://i.loli.net/2018/08/03/5b63d010b8bc7.jpg" alt=""></p><p><img src="https://i.loli.net/2018/08/03/5b63d04f4f6a7.jpg" alt=""></p><p>如图注释<br>首先注意dword_431750被赋值为<strong>0x29</strong><br>然后直接看第二层验证<br>*v18是输入name的第一个字符name[0]</p><p>经过如下计算<br><code>name[0]*0x29*2</code><br>并将其转换为十进制，然后填入( )中组合成密码</p><pre><code>CW-( )-CRACKED</code></pre><h2 id="注册机"><a href="#注册机" class="headerlink" title="注册机"></a>注册机</h2><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">#include &lt;stdio.h&gt;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    char name[1024];</span><br><span class="line"></span><br><span class="line">    printf(&quot;Input your name: &quot;);</span><br><span class="line">    scanf(&quot;%s&quot;, name);</span><br><span class="line">    printf(&quot;Serial: CW-%d-CRACKED\n&quot;, name[0] * 0x29 * 2);</span><br><span class="line">    return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><hr><p>END..</p><p>From <a href="https://kabeor.github.io/001_Acid_burn.exe 算法分析/">https://kabeor.github.io/001_Acid_burn.exe 算法分析/</a> bye</p>]]></content>
+      
+      
+        <tags>
+            
+            <tag> 逆向，160个crackme </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>2018巅峰极客网络安全技能挑战赛 RE(1) Simple Base-N</title>
       <link href="/2018%E5%B7%85%E5%B3%B0%E6%9E%81%E5%AE%A2%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8A%80%E8%83%BD%E6%8C%91%E6%88%98%E8%B5%9B%20RE(1)%20Simple%20Base-N/"/>
       <url>/2018%E5%B7%85%E5%B3%B0%E6%9E%81%E5%AE%A2%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E6%8A%80%E8%83%BD%E6%8C%91%E6%88%98%E8%B5%9B%20RE(1)%20Simple%20Base-N/</url>
@@ -1074,11 +1089,11 @@
       
         <tags>
             
-            <tag> i春秋 </tag>
-            
             <tag> CTF </tag>
             
             <tag> 逆向 </tag>
+            
+            <tag> i春秋 </tag>
             
         </tags>
       
@@ -1101,11 +1116,11 @@
       
         <tags>
             
-            <tag> i春秋 </tag>
-            
             <tag> CTF </tag>
             
             <tag> 逆向 </tag>
+            
+            <tag> i春秋 </tag>
             
         </tags>
       
@@ -1128,11 +1143,11 @@
       
         <tags>
             
-            <tag> i春秋 </tag>
-            
             <tag> CTF </tag>
             
             <tag> 逆向 </tag>
+            
+            <tag> i春秋 </tag>
             
         </tags>
       
@@ -1155,11 +1170,11 @@
       
         <tags>
             
-            <tag> i春秋 </tag>
-            
             <tag> CTF </tag>
             
             <tag> 逆向 </tag>
+            
+            <tag> i春秋 </tag>
             
         </tags>
       
@@ -1182,9 +1197,9 @@
       
         <tags>
             
-            <tag> i春秋 </tag>
-            
             <tag> 逆向 </tag>
+            
+            <tag> i春秋 </tag>
             
         </tags>
       
@@ -1207,9 +1222,9 @@
       
         <tags>
             
-            <tag> i春秋 </tag>
-            
             <tag> 逆向 </tag>
+            
+            <tag> i春秋 </tag>
             
         </tags>
       
@@ -1232,9 +1247,9 @@
       
         <tags>
             
-            <tag> i春秋 </tag>
-            
             <tag> 逆向 </tag>
+            
+            <tag> i春秋 </tag>
             
         </tags>
       
@@ -1257,9 +1272,9 @@
       
         <tags>
             
-            <tag> i春秋 </tag>
-            
             <tag> 逆向 </tag>
+            
+            <tag> i春秋 </tag>
             
         </tags>
       
@@ -1717,13 +1732,6 @@
   
     
     <entry>
-      <title>一个Security blog，记录着最基础的知识，当然也有对生活的感悟和一些记录，喜欢的话不如赏一杯九二年的Java</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
-      <content type="html"><![CDATA[]]></content>
-    </entry>
-    
-    <entry>
       <title>All categories</title>
       <link href="/categories/index.html"/>
       <url>/categories/index.html</url>
@@ -1731,16 +1739,16 @@
     </entry>
     
     <entry>
-      <title>各位大佬(╯°□°）╯︵ ┻━┻（调试中）</title>
-      <link href="/links/index.html"/>
-      <url>/links/index.html</url>
+      <title>一个Security blog，记录着最基础的知识，当然也有对生活的感悟和一些记录，喜欢的话不如赏一杯九二年的Java</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
       <content type="html"><![CDATA[]]></content>
     </entry>
     
     <entry>
-      <title>gallery</title>
-      <link href="/gallery/index.html"/>
-      <url>/gallery/index.html</url>
+      <title>timeline</title>
+      <link href="/timeline/index.html"/>
+      <url>/timeline/index.html</url>
       <content type="html"><![CDATA[]]></content>
     </entry>
     
@@ -1752,9 +1760,16 @@
     </entry>
     
     <entry>
-      <title>timeline</title>
-      <link href="/timeline/index.html"/>
-      <url>/timeline/index.html</url>
+      <title>gallery</title>
+      <link href="/gallery/index.html"/>
+      <url>/gallery/index.html</url>
+      <content type="html"><![CDATA[]]></content>
+    </entry>
+    
+    <entry>
+      <title>各位大佬(╯°□°）╯︵ ┻━┻（调试中）</title>
+      <link href="/links/index.html"/>
+      <url>/links/index.html</url>
       <content type="html"><![CDATA[]]></content>
     </entry>
     
